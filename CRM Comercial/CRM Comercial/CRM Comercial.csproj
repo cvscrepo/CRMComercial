@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>CRM_Comercial</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.13" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaComercial.BLL\SistemaComercial.BLL.csproj" />
+    <ProjectReference Include="..\SistemaComercial.DTO\SistemaComercial.DTO.csproj" />
+    <ProjectReference Include="..\SistemaComercial.IOC\SistemaComercial.IOC.csproj" />
+  </ItemGroup>
+
+</Project>
