@@ -33,7 +33,6 @@ namespace SistemaComercial.BLL.Servicios
         {
             try
             {
-                //var listaUsuarios = _DBDatos.ListarTablas("SelectUsers");
                 var listarUsuariosBDc = await _usuarioRepositorio.Consultar();
                 var lista = listarUsuariosBDc.Include("IdRolNavigation").AsEnumerable().ToList();
                 
@@ -53,7 +52,6 @@ namespace SistemaComercial.BLL.Servicios
                 {
                     new SqlParameter("@id", id)
                 };
-                //var listarUsuario = _DBDatos.Listar("SelectUsers @id", parametros);
                 var listarUsuariosBDc = await _usuarioRepositorio.Consultar((u) => u.IdUsuario == id );
                 Usuario devolverUsuario = listarUsuariosBDc.Include(rol => rol.IdRolNavigation).First();
                 return _mapper.Map<UsuarioDTO>(devolverUsuario);
@@ -64,12 +62,12 @@ namespace SistemaComercial.BLL.Servicios
             }
         }
 
-        public UsuarioDTO CrearUsuario(UsuarioDTO usuario)
+        public async Task<UsuarioDTO> CrearUsuario(UsuarioDTO usuario)
         {
             try
             {
                 //CreateUser @idUsuario, @nombre, @email, @contresana, @urlFoto, @esActivo
-                SqlParameter[] parametros =
+                /*SqlParameter[] parametros =
                 {
                     new SqlParameter("@idRol", SqlDbType.Int) {Value = usuario.IdRol},
                     new SqlParameter("@usuarioRegistro", SqlDbType.Int) {Value = usuario.UsuarioRegistro },
@@ -78,9 +76,9 @@ namespace SistemaComercial.BLL.Servicios
                     new SqlParameter("@contrasena", SqlDbType.NVarChar) {Value = usuario.Contrasena},
                     new SqlParameter("@urlFoto", SqlDbType.NVarChar) {Value = usuario.UrlFoto},
                     new SqlParameter("@esActivo", SqlDbType.Int) {Value = usuario.EsActivo},
-                };
+                };*/
 
-                var usuarioCreado = _DBDatos.Ejecutar("CreateUser @idRol, @usuarioRegistro, @nombre, @email, @contrasena, @urlFoto, @esActivo", parametros);
+                var usuarioCreado = await _usuarioRepositorio.Crear(_mapper.Map<Usuario>(usuario));
                 return _mapper.Map<UsuarioDTO>(usuarioCreado);
             }
             catch
@@ -89,11 +87,11 @@ namespace SistemaComercial.BLL.Servicios
             }
         }
 
-        public UsuarioDTO EditarUsuario(UsuarioDTO usuario)
+        public async Task<UsuarioDTO> EditarUsuario(UsuarioDTO usuario)
         {
             try
             {
-                SqlParameter[] parametros =
+                /*SqlParameter[] parametros =
                 {
                     new SqlParameter("@idUsuario", SqlDbType.Int) {Value = usuario.IdUsuario},
                     new SqlParameter("@nombre", SqlDbType.Int) {Value = usuario.NombreCompleto},
@@ -101,9 +99,9 @@ namespace SistemaComercial.BLL.Servicios
                     new SqlParameter("@contresana", SqlDbType.NVarChar) {Value = usuario.Contrasena},
                     new SqlParameter("@urlFoto", SqlDbType.NVarChar) {Value = usuario.UrlFoto},
                     new SqlParameter("@esActivo", SqlDbType.Int) {Value = usuario.EsActivo},
-                };
+                };*/
 
-                var usuarioEditado = _DBDatos.Ejecutar("CreateUser @idUsuario, @nombre, @email, @contresana, @urlFoto, @esActivo", parametros);
+                var usuarioEditado = await _usuarioRepositorio.Crear(_mapper.Map<Usuario>(usuario));
                 return _mapper.Map<UsuarioDTO>(usuarioEditado);             
             }
             catch
@@ -112,7 +110,7 @@ namespace SistemaComercial.BLL.Servicios
             }
         }
 
-        public bool EliminarUsuario(int id)
+        public async Task<bool> EliminarUsuario(int id)
         {
             try
             {

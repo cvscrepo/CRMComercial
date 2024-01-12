@@ -16,6 +16,7 @@ namespace SistemaComercial.Utility
         {
             #region Rol
             CreateMap<Rol, RolDTO>().ReverseMap();
+            CreateMap<RolDTO, Rol>().ReverseMap();
             #endregion
 
             #region Menu

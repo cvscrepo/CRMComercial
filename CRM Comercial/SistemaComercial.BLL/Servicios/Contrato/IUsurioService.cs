@@ -18,10 +18,10 @@ namespace SistemaComercial.BLL.Servicios.Contrato
 
         public Task<UsuarioDTO> ListarUsuario(int id);
 
-        public UsuarioDTO CrearUsuario(UsuarioDTO usuario);
+        public Task<UsuarioDTO> CrearUsuario(UsuarioDTO usuario);
 
-        public UsuarioDTO EditarUsuario(UsuarioDTO usuario);
+        public Task<UsuarioDTO> EditarUsuario(UsuarioDTO usuario);
 
-        public bool EliminarUsuario(int id);
+        public Task<bool> EliminarUsuario(int id);
     }
 }

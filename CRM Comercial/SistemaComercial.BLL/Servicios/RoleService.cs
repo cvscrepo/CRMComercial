@@ -3,6 +3,7 @@ using Microsoft.Data.SqlClient;
 using SistemaComercial.BLL.Servicios.Contrato;
 using SistemaComercial.DAL;
 using SistemaComercial.DAL.DBDatos.Contrato;
+using SistemaComercial.DAL.Repositorios.Contratos;
 using SistemaComercial.DTO;
 using SistemaComercial.Model;
 using System;
@@ -17,19 +18,21 @@ namespace SistemaComercial.BLL.Servicios
     public class RoleService : IRolService
     {
         private readonly IDBDatos<Rol> _roldBDatos;
+        private readonly IGenericRepository<Rol> _rolRepository;
         private readonly IMapper _mapper;
 
-        public RoleService(IDBDatos<Rol> roldBDatos, IMapper mapper)
+        public RoleService(IGenericRepository<Rol> rolRepository, IDBDatos<Rol> roldBDatos, IMapper mapper)
         {
+            _rolRepository = rolRepository;
             _roldBDatos = roldBDatos;
             _mapper = mapper;
         }
 
-        public List<RolDTO> ListRoles()
+        public async Task<List<RolDTO>> ListRoles()
         {
             try
             {
-                var listarRoles = _roldBDatos.Listar("SelectRol");
+                var listarRoles = await _rolRepository.Consultar();
                 return _mapper.Map<List<RolDTO>>(listarRoles);
             }
             catch
@@ -38,15 +41,11 @@ namespace SistemaComercial.BLL.Servicios
             }
         }
 
-        public List<RolDTO> ListRole(int id)
+        public async Task<List<RolDTO>> ListRole(int id)
         {
             try
             {
-                var parametros = new List<SqlParameter>
-                {
-                     new SqlParameter("@id", id)
-                };
-                var listarRol = _roldBDatos.ListarTablas("SelectRol @id", parametros);
+                var listarRol = await _rolRepository.Consultar(rol => rol.IdRol == id);
                 return _mapper.Map<List<RolDTO>>(listarRol);
             }
             catch
@@ -54,20 +53,17 @@ namespace SistemaComercial.BLL.Servicios
                 throw;
             }
         }
-        public int CreateRol(RolDTO rol)
+        public async Task<int> CreateRol(RolDTO rol)
         {
             try
             {
+                
                 if (string.IsNullOrEmpty(rol.Nombre))
                 {
                     throw new ArgumentException($"El nombre no puede ser nulo o vacío.", nameof(rol.Nombre));
                 }
-                SqlParameter[] parametrosCrear =
-                {
-                     new SqlParameter("@name", SqlDbType.NVarChar) {Value = rol.Nombre}
-                };
-                var rolCreado = _roldBDatos.Ejecutar("CreateRole @name", parametrosCrear);
-                return rolCreado;
+                var rolCreado = await _rolRepository.Crear(_mapper.Map<Rol>(rol));
+                return rolCreado != null ? 1 : 0;
             }
             catch
             {
@@ -75,17 +71,13 @@ namespace SistemaComercial.BLL.Servicios
             }
         }
 
-        public bool UpdateRole(RolDTO rol)
+        public async Task<bool> UpdateRole(RolDTO rol)
         {
             try
             {
-                SqlParameter[] parametros =
-                {
-                     new SqlParameter("@id", SqlDbType.Int) { Value = rol.IdRol },
-                     new SqlParameter("@name", SqlDbType.NVarChar) { Value = rol.Nombre }
-                };
-                var rolEditado = _roldBDatos.Ejecutar("CreateRol @id, @name", parametros);
-                return rolEditado == 1;
+                
+                var rolEditado = await _rolRepository.Editar(_mapper.Map<Rol>(rol));
+                return rolEditado != null;
             }
             catch
             {
@@ -93,17 +85,13 @@ namespace SistemaComercial.BLL.Servicios
             }
         }
 
-        public bool DeleteRole(int id )
+        public async Task<bool> DeleteRole(int id )
         {
             try
             {
-                SqlParameter[] parametros =
-                {
-                    new SqlParameter("id", SqlDbType.Int) { Value = id }
-
-                };
-                var rolEliminado = _roldBDatos.Ejecutar("DeleteRol @id", parametros);
-                return rolEliminado == 1;
+                var rol = await _rolRepository.Obtener(rol => rol.IdRol == id);
+                var rolEliminado = await _rolRepository.Eliminar(rol);
+                return rolEliminado != null;
 
             }
             catch 
