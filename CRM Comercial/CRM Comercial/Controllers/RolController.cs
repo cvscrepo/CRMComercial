@@ -25,6 +25,7 @@ namespace CRM_Comercial.Controllers
             try
             {
                 var roles = await _rolService.ListRoles();
+                response.Success = true;
                 response.Message = "OK";
                 response.Value = roles;
                 return Ok(response);

@@ -2,6 +2,7 @@
 using Microsoft.Data.SqlClient;
 using SistemaComercial.DAL.DBDatos.Contrato;
 using SistemaComercial.DTO;
+using SistemaComercial.Model;
 using System;
 using System.Collections.Generic;
 using System.Data;

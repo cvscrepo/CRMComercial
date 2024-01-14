@@ -57,12 +57,12 @@ namespace CRM_Comercial.Controllers
         }
 
         [HttpPost]
-        public IActionResult CrearUsuario([FromBody] UsuarioDTO usuario)
+        public async Task<IActionResult> CrearUsuario([FromBody] UsuarioDTO usuario)
         {
             Response response = new Response();
             try
             {
-                var usuarioCreado = _usuarioService.CrearUsuario(usuario); 
+                var usuarioCreado = await _usuarioService.CrearUsuario(usuario); 
                 response.Success = true;
                 response.Message = "Ok";
                 response.Value = usuarioCreado;
