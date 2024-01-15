@@ -19,3 +19,25 @@ C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos
 C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.Utility.pdb
 C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.csproj.AssemblyReference.cache
 C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.csproj.CopyComplete
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.BLL.deps.json
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.BLL.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.BLL.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.DAL.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.DTO.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.Model.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.Utility.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.DAL.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.DTO.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.Model.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.Utility.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.AssemblyInfoInputs.cache
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.AssemblyInfo.cs
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.sourcelink.json
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.csproj.CopyComplete
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\refint\SistemaComercial.BLL.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\ref\SistemaComercial.BLL.dll

@@ -66,19 +66,19 @@ namespace SistemaComercial.BLL.Servicios
         {
             try
             {
-                //CreateUser @idUsuario, @nombre, @email, @contresana, @urlFoto, @esActivo
-                /*SqlParameter[] parametros =
+                
+                var usuarioMapeado = _mapper.Map<Usuario>(usuario);
+                var usuarioCreado = await _usuarioRepositorio.Crear(usuarioMapeado);
+                if(usuarioCreado.IdUsuario == 0)
                 {
-                    new SqlParameter("@idRol", SqlDbType.Int) {Value = usuario.IdRol},
-                    new SqlParameter("@usuarioRegistro", SqlDbType.Int) {Value = usuario.UsuarioRegistro },
-                    new SqlParameter("@nombre", SqlDbType.NVarChar) {Value = usuario.NombreCompleto},
-                    new SqlParameter("@email", SqlDbType.NVarChar) {Value = usuario.Email},
-                    new SqlParameter("@contrasena", SqlDbType.NVarChar) {Value = usuario.Contrasena},
-                    new SqlParameter("@urlFoto", SqlDbType.NVarChar) {Value = usuario.UrlFoto},
-                    new SqlParameter("@esActivo", SqlDbType.Int) {Value = usuario.EsActivo},
-                };*/
+                    throw new TaskCanceledException("No se pudo crear el usuario");
+                }
 
-                var usuarioCreado = await _usuarioRepositorio.Crear(_mapper.Map<Usuario>(usuario));
+                var query = await _usuarioRepositorio.Consultar(u => u.IdUsuario == usuarioCreado.IdUsuario);
+
+               usuarioCreado = query.Include(rol => rol.IdRolNavigation).FirstOrDefault();
+
+
                 return _mapper.Map<UsuarioDTO>(usuarioCreado);
             }
             catch

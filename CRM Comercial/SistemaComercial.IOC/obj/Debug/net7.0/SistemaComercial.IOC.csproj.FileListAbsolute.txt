@@ -21,3 +21,27 @@ C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos
 C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.IOC\bin\Debug\net7.0\SistemaComercial.Model.pdb
 C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.IOC\obj\Debug\net7.0\SistemaComercial.IOC.csproj.AssemblyReference.cache
 C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.IOC\obj\Debug\net7.0\SistemaComercial.IOC.csproj.CopyComplete
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\bin\Debug\net7.0\SistemaComercial.IOC.deps.json
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\bin\Debug\net7.0\SistemaComercial.IOC.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\bin\Debug\net7.0\SistemaComercial.IOC.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\bin\Debug\net7.0\SistemaComercial.BLL.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\bin\Debug\net7.0\SistemaComercial.DAL.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\bin\Debug\net7.0\SistemaComercial.DTO.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\bin\Debug\net7.0\SistemaComercial.Model.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\bin\Debug\net7.0\SistemaComercial.Utility.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\bin\Debug\net7.0\SistemaComercial.BLL.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\bin\Debug\net7.0\SistemaComercial.DAL.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\bin\Debug\net7.0\SistemaComercial.Utility.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\bin\Debug\net7.0\SistemaComercial.DTO.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\bin\Debug\net7.0\SistemaComercial.Model.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\obj\Debug\net7.0\SistemaComercial.IOC.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\obj\Debug\net7.0\SistemaComercial.IOC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\obj\Debug\net7.0\SistemaComercial.IOC.AssemblyInfoInputs.cache
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\obj\Debug\net7.0\SistemaComercial.IOC.AssemblyInfo.cs
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\obj\Debug\net7.0\SistemaComercial.IOC.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\obj\Debug\net7.0\SistemaComercial.IOC.sourcelink.json
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\obj\Debug\net7.0\SistemaComercial.IOC.csproj.CopyComplete
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\obj\Debug\net7.0\SistemaComercial.IOC.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\obj\Debug\net7.0\refint\SistemaComercial.IOC.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\obj\Debug\net7.0\SistemaComercial.IOC.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.IOC\obj\Debug\net7.0\ref\SistemaComercial.IOC.dll

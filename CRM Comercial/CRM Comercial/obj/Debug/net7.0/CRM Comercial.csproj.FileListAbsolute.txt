@@ -88,3 +88,94 @@ C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos
 C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\appsettings.json
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\CRM Comercial.exe
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\CRM Comercial.deps.json
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\CRM Comercial.runtimeconfig.json
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\CRM Comercial.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\CRM Comercial.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Humanizer.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\SistemaComercial.BLL.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\SistemaComercial.DAL.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\SistemaComercial.DTO.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\SistemaComercial.IOC.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\SistemaComercial.Model.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\SistemaComercial.Utility.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\SistemaComercial.BLL.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\SistemaComercial.DTO.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\SistemaComercial.IOC.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\SistemaComercial.DAL.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\SistemaComercial.Model.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\SistemaComercial.Utility.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\CRM Comercial.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\CRM Comercial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\CRM Comercial.AssemblyInfoInputs.cache
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\CRM Comercial.AssemblyInfo.cs
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\CRM Comercial.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\CRM Comercial.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\CRM Comercial.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\CRM Comercial.sourcelink.json
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\staticwebassets\msbuild.CRM Comercial.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\staticwebassets\msbuild.build.CRM Comercial.props
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.CRM Comercial.props
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.CRM Comercial.props
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\scopedcss\bundle\CRM Comercial.styles.css
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\CRM Comercial.csproj.CopyComplete
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\CRM Comercial.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\refint\CRM Comercial.dll
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\CRM Comercial.pdb
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\CRM Comercial.genruntimeconfig.cache
+C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\ref\CRM Comercial.dll

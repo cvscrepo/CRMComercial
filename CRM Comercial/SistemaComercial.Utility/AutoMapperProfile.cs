@@ -14,6 +14,7 @@ namespace SistemaComercial.Utility
     {
         public AutoMapperProfile()
         {
+            // origen - destino
             #region Rol
             CreateMap<Rol, RolDTO>().ReverseMap();
             CreateMap<RolDTO, Rol>().ReverseMap();
@@ -38,10 +39,10 @@ namespace SistemaComercial.Utility
                 .ForMember(destino =>
                    destino.IdRolNavigation,
                    opt => opt.Ignore()
-                )
+                )                
                 .ForMember(destino =>
                 destino.EsActivo,
-                opt => opt.MapFrom(origen => origen.EsActivo == 1)
+                opt => opt.MapFrom(origen => origen.EsActivo == 1 ? true : false)
                 );
 
             CreateMap<Usuario, SesionDTO>()
