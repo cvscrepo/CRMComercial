@@ -65,6 +65,13 @@ namespace SistemaComercial.Utility
                 );
             #endregion
 
+            #region Tipo servicio
+            CreateMap<TipoServicio, TipoServicioDTO>()
+                .ReverseMap();
+            CreateMap<TipoServicioDTO, TipoServicio>()
+                .ReverseMap();
+            #endregion
+
             #region Cotización
             CreateMap<Cotizacion, CotizacionDTO>()
                 .ForMember(destino =>

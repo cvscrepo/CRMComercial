@@ -30,6 +30,7 @@ namespace SistemaComercial.IOC
             services.AddAutoMapper(typeof(AutoMapperProfile));
             services.AddScoped<IRolService, RoleService>();
             services.AddScoped<IUsurioService, UsuarioService>();
+            services.AddScoped<ITipoService, TipoService>();
         }
     }
 }

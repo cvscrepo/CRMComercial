@@ -76,12 +76,12 @@ namespace CRM_Comercial.Controllers
         }
 
         [HttpPut]
-        public IActionResult EditarUsuario([FromBody] UsuarioDTO usuario)
+        public async Task<IActionResult> EditarUsuario([FromBody] UsuarioDTO usuario)
         {
             Response response = new Response();
             try
             {
-                var usuarioEditado = _usuarioService.EditarUsuario(usuario);
+                var usuarioEditado = await _usuarioService.EditarUsuario(usuario);
                 response.Success = true;
                 response.Message = "Ok";
                 response.Value = usuarioEditado;
@@ -95,12 +95,12 @@ namespace CRM_Comercial.Controllers
         }
 
         [HttpDelete]
-        public IActionResult EliminarUsuario([FromQuery] int id)
+        public async Task<IActionResult> EliminarUsuario([FromQuery] int id)
         {
             Response response = new Response(); 
             try
             {
-                var usuarioEliminado = _usuarioService.EliminarUsuario(id);
+                var usuarioEliminado = await _usuarioService.EliminarUsuario(id);
                 response.Success = true;
                 response.Message = "Ok";
                 response.Value = usuarioEliminado;

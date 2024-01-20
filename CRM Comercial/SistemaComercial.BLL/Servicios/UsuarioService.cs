@@ -48,10 +48,6 @@ namespace SistemaComercial.BLL.Servicios
         {
             try
             {
-                List<SqlParameter> parametros = new List<SqlParameter>
-                {
-                    new SqlParameter("@id", id)
-                };
                 var listarUsuariosBDc = await _usuarioRepositorio.Consultar((u) => u.IdUsuario == id );
                 Usuario devolverUsuario = listarUsuariosBDc.Include(rol => rol.IdRolNavigation).First();
                 return _mapper.Map<UsuarioDTO>(devolverUsuario);
@@ -76,7 +72,7 @@ namespace SistemaComercial.BLL.Servicios
 
                 var query = await _usuarioRepositorio.Consultar(u => u.IdUsuario == usuarioCreado.IdUsuario);
 
-               usuarioCreado = query.Include(rol => rol.IdRolNavigation).FirstOrDefault();
+                usuarioCreado = query.Include(rol => rol.IdRolNavigation).FirstOrDefault();
 
 
                 return _mapper.Map<UsuarioDTO>(usuarioCreado);
@@ -91,18 +87,28 @@ namespace SistemaComercial.BLL.Servicios
         {
             try
             {
-                /*SqlParameter[] parametros =
-                {
-                    new SqlParameter("@idUsuario", SqlDbType.Int) {Value = usuario.IdUsuario},
-                    new SqlParameter("@nombre", SqlDbType.Int) {Value = usuario.NombreCompleto},
-                    new SqlParameter("@email", SqlDbType.NVarChar) {Value = usuario.Email},
-                    new SqlParameter("@contresana", SqlDbType.NVarChar) {Value = usuario.Contrasena},
-                    new SqlParameter("@urlFoto", SqlDbType.NVarChar) {Value = usuario.UrlFoto},
-                    new SqlParameter("@esActivo", SqlDbType.Int) {Value = usuario.EsActivo},
-                };*/
 
-                var usuarioEditado = await _usuarioRepositorio.Crear(_mapper.Map<Usuario>(usuario));
-                return _mapper.Map<UsuarioDTO>(usuarioEditado);             
+                var usuarioModelo = _mapper.Map<Usuario>(usuario);
+                var usuarioEncontrado = await _usuarioRepositorio.Obtener(u => u.IdUsuario == usuarioModelo.IdUsuario);
+                if(usuarioEncontrado == null)
+                {
+                    throw new TaskCanceledException("El usuario no existe");
+                }
+
+                usuarioEncontrado.NombreCompleto = usuarioModelo.NombreCompleto;
+                usuarioEncontrado.Email = usuarioModelo.Email;
+                usuarioEncontrado.IdRol = usuarioModelo.IdRol;
+                usuarioEncontrado.Contrasena = usuarioModelo.Contrasena;
+                usuarioEncontrado.EsActivo = usuarioModelo.EsActivo;
+                usuarioEncontrado.UptadedAt = DateTime.Now;
+
+                bool respuesta = await _usuarioRepositorio.Editar(usuarioEncontrado);
+                if (!respuesta)
+                {
+                    throw new TaskCanceledException("El usuario no se pudo editar");
+                }
+
+                return _mapper.Map<UsuarioDTO>(usuarioEncontrado);             
             }
             catch
             {
@@ -114,14 +120,14 @@ namespace SistemaComercial.BLL.Servicios
         {
             try
             {
-                SqlParameter[] parametros =
+                var usuarioEncontrado = await _usuarioRepositorio.Obtener((u)=> u.IdUsuario == id);
+                if (usuarioEncontrado == null)
                 {
-                    new SqlParameter("@id", SqlDbType.Int) {Value = id}
-                };
-
-                var usuarioEliminado = _DBDatos.Ejecutar("DeleteUser @id", parametros);
-                return usuarioEliminado == 1;
-
+                    throw new TaskCanceledException("Usuario a eliminar no encontrado");
+                }
+                var respuesta = await _usuarioRepositorio.Eliminar(usuarioEncontrado);
+                
+                return respuesta;
             }
             catch
             {
