@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SistemaComercial.BLL.Servicios.Contrato;
 using SistemaComercial.DTO;
+using SistemaComercial.Model;
 using SistemaComercial.Utility;
 using System.Runtime.CompilerServices;
 
@@ -49,7 +50,7 @@ namespace CRM_Comercial.Controllers
                 response.Value = tipoServicioCreado;
                 return Ok(response);
             }
-            catch (Exception ex)
+            catch (Exception ex)            
             {
                 response.Success = false;
                 response.Message= ex.Message;
