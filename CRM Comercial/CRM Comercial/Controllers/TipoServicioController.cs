@@ -76,5 +76,25 @@ namespace CRM_Comercial.Controllers
                 return BadRequest(response);
             }
         }
+
+        [HttpDelete]
+        public async Task<IActionResult> EliminarTipoServicio([FromBody] TipoServicioDTO tipoServicio)
+        {
+            Response response = new Response();
+            try
+            {
+                var tipoServicioEliminado = await _service.EliminarTipoServicio(tipoServicio);
+                response.Success = true;
+                response.Message = "Ok";
+                response.Value = tipoServicioEliminado;
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                response.Success = false;
+                response.Message = ex.Message;
+                return BadRequest(response);
+            }
+        }
     }
 }

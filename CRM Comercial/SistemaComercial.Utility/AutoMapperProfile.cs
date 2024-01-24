@@ -56,7 +56,7 @@ namespace SistemaComercial.Utility
             CreateMap<Servicio, ServicioDTO>()
                 .ForMember(destino =>
                    destino.DescripcionCategoria,
-                   opt => opt.MapFrom(origen => origen.TipoServicioNavigation.Descripcion)
+                   opt => opt.MapFrom(origen => origen.TipoServicioNavigation.Nombre)
                 );
             CreateMap<ServicioDTO, Servicio>()
                 .ForMember(destino =>
