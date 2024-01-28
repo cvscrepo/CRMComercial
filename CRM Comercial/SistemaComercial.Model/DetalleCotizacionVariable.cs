@@ -19,5 +19,5 @@ public partial class DetalleCotizacionVariable
 
     public virtual DetalleCotizacion? IdDetalleCotizacionNavigation { get; set; }
 
-    public virtual VariablesEconomica? IdParametrosVariablesNavigation { get; set; }
+    public virtual VariablesEconomicas? IdParametrosVariablesNavigation { get; set; }
 }

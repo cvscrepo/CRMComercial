@@ -102,6 +102,14 @@ namespace SistemaComercial.Utility
                 );
             #endregion
 
+            #region Cliente
+            CreateMap<Cliente, ClienteDTO>()
+                .ReverseMap();
+            CreateMap<ClienteDTO, Cliente>()
+                .ReverseMap();
+
+            #endregion
+
             #region Detalle Cotización
             CreateMap<DetalleCotizacion, DetalleCotizacionDTO>()
                 .ForMember(destino =>
@@ -194,7 +202,7 @@ namespace SistemaComercial.Utility
             #endregion
 
             #region variables economicas
-            CreateMap<VariablesEconomica, VariablesEconomicaDTO>()
+            CreateMap<VariablesEconomicas, VariablesEconomicaDTO>()
                 .ForMember(destino =>
                     destino.Valor,
                     opt => opt.MapFrom(origen => origen.Valor.ToString())
@@ -207,18 +215,19 @@ namespace SistemaComercial.Utility
                     destino.UpdatedAt,
                     opt => opt.MapFrom(origen => origen.UpdatedAt.Value.ToString())
                 );
-            CreateMap<VariablesEconomicaDTO, VariablesEconomica>()
+            CreateMap<VariablesEconomicaDTO, VariablesEconomicas>()
                 .ForMember(destino =>
                     destino.Valor,
                     opt => opt.MapFrom(origen => Convert.ToDecimal(origen.Valor))
                 )
                 .ForMember(destino =>
                     destino.CreatedAt,
-                    opt => opt.MapFrom(origen => DateTime.ParseExact(origen.CreatedAt, "dd/MM/yyyy", CultureInfo.InvariantCulture))
+                    opt => opt.Ignore()
+                    //opt => opt.MapFrom(origen => DateTime.ParseExact(origen.CreatedAt, "dd/MM/yyyy", CultureInfo.InvariantCulture))
                 )
                 .ForMember(destino =>
                     destino.UpdatedAt,
-                    opt => opt.MapFrom(origen => DateTime.ParseExact(origen.UpdatedAt, "dd/MM/yyyy", CultureInfo.InvariantCulture))
+                    opt => opt.Ignore()
                 );
             #endregion
 

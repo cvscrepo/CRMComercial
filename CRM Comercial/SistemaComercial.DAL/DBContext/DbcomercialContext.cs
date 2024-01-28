@@ -48,7 +48,7 @@ public partial class DbcomercialContext : DbContext
 
     public virtual DbSet<Usuario> Usuarios { get; set; }
 
-    public virtual DbSet<VariablesEconomica> VariablesEconomicas { get; set; }
+    public virtual DbSet<VariablesEconomicas> VariablesEconomicas { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { }
 
@@ -542,7 +542,7 @@ public partial class DbcomercialContext : DbContext
                 .HasConstraintName("FK__Usuario__usuario__4316F928");
         });
 
-        modelBuilder.Entity<VariablesEconomica>(entity =>
+        modelBuilder.Entity<VariablesEconomicas>(entity =>
         {
             entity.HasKey(e => e.IdVariablesEconomicas).HasName("PK__Variable__A9412766A6A5C029");
 

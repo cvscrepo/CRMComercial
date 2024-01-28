@@ -14,10 +14,10 @@ namespace SistemaComercial.BLL.Servicios
 {
     public class VariablesEconomicasService : IVariablesEconomicasService
     {
-        private readonly IGenericRepository<VariablesEconomica> _variablesRepositorio;
+        private readonly IGenericRepository<VariablesEconomicas> _variablesRepositorio;
         private readonly IMapper _mapper;
 
-        public VariablesEconomicasService(IGenericRepository<VariablesEconomica> variablesRepositorio, IMapper mapper)
+        public VariablesEconomicasService(IGenericRepository<VariablesEconomicas> variablesRepositorio, IMapper mapper)
         {
             _variablesRepositorio = variablesRepositorio;
             _mapper = mapper;
@@ -39,8 +39,8 @@ namespace SistemaComercial.BLL.Servicios
         {
             try
             {
-                var listarVariable = await _variablesRepositorio.Consultar((v) => v.IdVariablesEconomicas == id);
-                if (listarVariable != null)
+                var listarVariable = await _variablesRepositorio.Obtener((v) => v.IdVariablesEconomicas == id);
+                if (listarVariable == null)
                 {
                     throw new TaskCanceledException("Variable no encontrada");
                 }
@@ -56,13 +56,14 @@ namespace SistemaComercial.BLL.Servicios
         {
             try
             {
-                var variableCreada = await _variablesRepositorio.Crear(_mapper.Map<VariablesEconomica>(variable));
-                if(variableCreada != null)
+                var variableModelo = _mapper.Map<VariablesEconomicas>(variable);
+                var variableCreada = await _variablesRepositorio.Crear(variableModelo);
+                if(variableCreada == null)
                 {
                     throw new TaskCanceledException("Variable no creada");
                 }
                 var query = await _variablesRepositorio.Consultar(u => u.IdVariablesEconomicas == variable.IdVariablesEconomicas);
-                return _mapper.Map<VariablesEconomicaDTO>(query);
+                return _mapper.Map<VariablesEconomicaDTO>(variableModelo);
             }
             catch
             {

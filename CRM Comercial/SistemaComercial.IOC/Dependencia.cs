@@ -31,6 +31,7 @@ namespace SistemaComercial.IOC
             services.AddScoped<IRolService, RoleService>();
             services.AddScoped<IUsurioService, UsuarioService>();
             services.AddScoped<ITipoService, TipoService>();
+            services.AddScoped<IVariablesEconomicasService, VariablesEconomicasService>();
         }
     }
 }

@@ -70,7 +70,7 @@ namespace CRM_Comercial.Controllers
             }
             catch (Exception ex)
             {
-                response.Message = ex.ToString();
+                response.Message = ex.Message;
                 return BadRequest(response);
             }
         }

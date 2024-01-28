@@ -45,7 +45,7 @@ public partial class Usuario
 
     public virtual Usuario? UsuarioRegistroNavigation { get; set; }
 
-    public virtual ICollection<VariablesEconomica> VariablesEconomicaCreatedByNavigations { get; set; } = new List<VariablesEconomica>();
+    public virtual ICollection<VariablesEconomicas> VariablesEconomicaCreatedByNavigations { get; set; } = new List<VariablesEconomicas>();
 
-    public virtual ICollection<VariablesEconomica> VariablesEconomicaUpdatedByNavigations { get; set; } = new List<VariablesEconomica>();
+    public virtual ICollection<VariablesEconomicas> VariablesEconomicaUpdatedByNavigations { get; set; } = new List<VariablesEconomicas>();
 }
