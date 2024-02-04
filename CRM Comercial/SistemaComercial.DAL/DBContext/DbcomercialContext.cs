@@ -120,12 +120,18 @@ public partial class DbcomercialContext : DbContext
             entity.ToTable("Contrato");
 
             entity.Property(e => e.id)
-                .ValueGeneratedNever()
                 .HasColumnName("id");
             entity.Property(e => e.FechaCreacion)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("fechaCreacion");
+            entity.Property(e => e.FechaEdicion)
+                .HasColumnType("datetime")
+                .HasColumnName("fechaEdicion");
+            entity.Property(e => e.Nit)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("nit");
             entity.Property(e => e.IdCotizacion).HasColumnName("idCotizacion");
             entity.Property(e => e.Nombre)
                 .HasMaxLength(100)

@@ -14,6 +14,6 @@ namespace SistemaComercial.BLL.Servicios.Contrato
         public Task<ClienteDTO> ListarCliente(int id);
         public Task<ClienteDTO> CrearCliente(ClienteDTO cliente);
         public Task<ClienteDTO> EditarCliene(ClienteDTO cliente);
-        public Task<int> EliminarCliente(int id);
+        public Task<bool> EliminarCliente(int id);
     }
 }

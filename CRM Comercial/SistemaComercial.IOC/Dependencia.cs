@@ -32,6 +32,10 @@ namespace SistemaComercial.IOC
             services.AddScoped<IUsurioService, UsuarioService>();
             services.AddScoped<ITipoService, TipoService>();
             services.AddScoped<IVariablesEconomicasService, VariablesEconomicasService>();
+            services.AddScoped<IClienteService, ClienteService>();
+            services.AddScoped<ISucursalService, SucursalService>();
+            services.AddScoped<ICotizacionService, CotizacionService>();
+            services.AddScoped<IContratoService, ContratoService>();
         }
     }
 }

@@ -10,14 +10,18 @@ namespace SistemaComercial.DTO
     {
         public int id { get; set; }
 
+        public int? Nit { get; set; }
         public string? Nombre { get; set; }
 
-        public int? IdCotizacion { get; set; }
+        public int IdCotizacion { get; set; }
+
+        public CotizacionDTO Cotizacion { get; set; }
 
         public string? RepresentanteLegal { get; set; }
 
-        public string? FechaCreacion { get; set; }
+        public DateTime? FechaCreacion { get; set; }
 
-        public virtual CotizacionDTO? IdCotizacionNavigation { get; set; }
+        public DateTime? FechaEdicion { get; set; }
+
     }
 }
