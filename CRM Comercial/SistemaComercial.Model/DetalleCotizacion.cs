@@ -9,7 +9,7 @@ public partial class DetalleCotizacion
 
     public int IdCotizacion { get; set; }
 
-    public int IdProducto { get; set; }
+    public int IdServicio { get; set; }
 
     public int IdSucursal { get; set; }
 
@@ -29,7 +29,7 @@ public partial class DetalleCotizacion
 
     public virtual Cotizacion IdCotizacionNavigation { get; set; } = null!;
 
-    public virtual Servicio IdProductoNavigation { get; set; } = null!;
+    public virtual Servicio IdServicioNavigation { get; set; } = null!;
 
     public virtual Sucursal IdSucursalNavigation { get; set; } = null!;
 }

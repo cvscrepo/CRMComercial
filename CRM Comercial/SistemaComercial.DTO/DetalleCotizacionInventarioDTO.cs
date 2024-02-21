@@ -14,12 +14,14 @@ namespace SistemaComercial.DTO
 
         public int? CreatedBy { get; set; }
 
-        public int? IdInventario { get; set; }
+        public int IdInventario { get; set; }
 
         public int CantidadAsignada { get; set; }
 
-        public string? CreatedAt { get; set; }
+        public DateTime? CreatedAt { get; set; }
 
-        public string? UpdatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+
+        public virtual InventarioDTO? IdInventarioNavigation { get; set; }
     }
 }

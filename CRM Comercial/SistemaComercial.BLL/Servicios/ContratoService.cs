@@ -63,7 +63,7 @@ namespace SistemaComercial.BLL.Servicios
             try
             {
                 var listarCotizacion = await _cotizacionService.ListarCotizacion(contratoDTO.IdCotizacion);
-                contratoDTO.Nit = listarCotizacion.Cliente.Nit;
+                contratoDTO.Nit = listarCotizacion.IdClienteNavigation.Nit;
                 var contratoCreado = await _contratoRepository.Crear(_mapper.Map<SistemaComercial.Model.Contrato>(contratoDTO));
                 if (contratoCreado == null)
                 {

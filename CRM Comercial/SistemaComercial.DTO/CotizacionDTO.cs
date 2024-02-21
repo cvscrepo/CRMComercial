@@ -12,11 +12,7 @@ namespace SistemaComercial.DTO
 
         public int? IdCliente { get; set; }
 
-        public ClienteDTO? Cliente { get; set; }
-
         public int? IdUsuario { get; set; }
-
-        public UsuarioDTO? Usuario { get; set; }
 
         public string? Nombre { get; set; }
 
@@ -29,5 +25,11 @@ namespace SistemaComercial.DTO
         public string? CreatedAt { get; set; }
 
         public string? UpdatedAt { get; set; }
+
+        public virtual ICollection<DetalleCotizacionDTO> DetalleCotizacions { get; set; } = new List<DetalleCotizacionDTO>();
+
+        public virtual ClienteDTO? IdClienteNavigation { get; set; }
+
+        public virtual UsuarioDTO? IdUsuarioNavigation { get; set; }
     }
 }

@@ -21,11 +21,41 @@ namespace SistemaComercial.BLL.Servicios
             _categoriaRepository = categoriaRepository;
             _mapper = mapper;
         }
-        public async Task<CategoriaInventarioDTO> ListarCategorias()
+        public async Task<List<CategoriaInventarioDTO>> ListarCategorias()
         {
             try
             {
                 var listarCategorias = await _categoriaRepository.Consultar();
+                return _mapper.Map<List<CategoriaInventarioDTO>>(listarCategorias);
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        public async Task<CategoriaInventarioDTO> CrearCategoria(CategoriaInventarioDTO categoria)
+        {
+            try
+            {
+                var CrearCategoria = await _categoriaRepository.Crear(_mapper.Map<CategoriaInventario>(categoria)) ?? throw new TaskCanceledException("No se pudo crear la categoría");
+                return _mapper.Map<CategoriaInventarioDTO>(CrearCategoria);
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        public async Task<CategoriaInventarioDTO> EditarCategoria(CategoriaInventarioDTO categoria)
+        {
+            try
+            {
+                var listarCategorias = await _categoriaRepository.Obtener(c => c.IdCategoria == categoria.IdCategoria);
+                if (listarCategorias == null) throw new TaskCanceledException("No se encontró la categoría a editar");
+                listarCategorias.Nombre = categoria.Nombre;
+                var categoríaEditada = await _categoriaRepository.Editar(listarCategorias);
+                if(!categoríaEditada) throw new TaskCanceledException("No se pudo editar la categoría");
                 return _mapper.Map<CategoriaInventarioDTO>(listarCategorias);
             }
             catch
@@ -34,19 +64,19 @@ namespace SistemaComercial.BLL.Servicios
             }
         }
 
-        public Task<CategoriaInventarioDTO> CrearCategoria(CategoriaInventarioDTO categoria)
+        public async Task<bool> EliminarCategoria(int id)
         {
-            throw new NotImplementedException();
-        }
-
-        public Task<CategoriaInventarioDTO> EditarCategoria(CategoriaInventarioDTO categoria)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<CategoriaInventarioDTO> EliminarCategoria(int id)
-        {
-            throw new NotImplementedException();
+            try
+            {
+                var listarCategorias = await _categoriaRepository.Obtener(c => c.IdCategoria == id);
+                if (listarCategorias == null) throw new TaskCanceledException("No se encontró la categoría a eliminar");
+                var categoraiEliminada = await _categoriaRepository.Eliminar(listarCategorias);
+                return categoraiEliminada;
+            }
+            catch
+            {
+                throw;
+            }
         }
 
     }

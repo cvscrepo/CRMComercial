@@ -36,6 +36,12 @@ namespace SistemaComercial.IOC
             services.AddScoped<ISucursalService, SucursalService>();
             services.AddScoped<ICotizacionService, CotizacionService>();
             services.AddScoped<IContratoService, ContratoService>();
+            services.AddScoped<ICategoriaInventarioService, CategoriaInventaroService>();
+            services.AddScoped<IInventarioService, InventarioService>();
+            services.AddScoped<IServicioService, ServicioService>();
+            services.AddScoped<IDetalleCotizacionService, DetalleCotizacionService>();
+            services.AddScoped<IDetalleCotizacionInventarioService, DetalleCotizacionInventarioService>();
+            services.AddScoped<IDetalleCotizacionVariableService, DetalleCotizacionVariableService>();
         }
     }
 }

@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace SistemaComercial.DAL.Repositorios.Contratos
 {
-    public interface IVentaRepository: IGenericRepository<Cotizacion>
+    public interface ICotizacionRepository: IGenericRepository<Cotizacion>
     {
-        Task<Cotizacion> Registrar(Cotizacion cotizacion);
+        Task<Cotizacion> RegistrarDetalleCotización(Cotizacion cotizacion);
     }
 }

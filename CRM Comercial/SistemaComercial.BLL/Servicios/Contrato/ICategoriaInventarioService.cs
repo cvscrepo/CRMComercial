@@ -9,9 +9,9 @@ namespace SistemaComercial.BLL.Servicios.Contrato
 {
     public interface ICategoriaInventarioService
     {
-        public Task<CategoriaInventarioDTO> ListarCategorias();
+        public Task<List<CategoriaInventarioDTO>> ListarCategorias();
         public Task<CategoriaInventarioDTO> CrearCategoria(CategoriaInventarioDTO categoria);
         public Task<CategoriaInventarioDTO> EditarCategoria(CategoriaInventarioDTO categoria);
-        public Task<CategoriaInventarioDTO> EliminarCategoria(int id);
+        public Task<bool> EliminarCategoria(int id);
     }
 }

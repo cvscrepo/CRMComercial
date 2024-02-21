@@ -204,7 +204,7 @@ public partial class DbcomercialContext : DbContext
                 .HasColumnType("text")
                 .HasColumnName("detalleServicio");
             entity.Property(e => e.IdCotizacion).HasColumnName("idCotizacion");
-            entity.Property(e => e.IdProducto).HasColumnName("idProducto");
+            entity.Property(e => e.IdServicio).HasColumnName("idServicio");
             entity.Property(e => e.IdSucursal).HasColumnName("idSucursal");
             entity.Property(e => e.Total)
                 .HasColumnType("decimal(10, 2)")
@@ -218,8 +218,8 @@ public partial class DbcomercialContext : DbContext
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__DetalleCo__idCot__71D1E811");
 
-            entity.HasOne(d => d.IdProductoNavigation).WithMany(p => p.DetalleCotizacions)
-                .HasForeignKey(d => d.IdProducto)
+            entity.HasOne(d => d.IdServicioNavigation).WithMany(p => p.DetalleCotizacions)
+                .HasForeignKey(d => d.IdServicio)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__DetalleCo__idPro__72C60C4A");
 

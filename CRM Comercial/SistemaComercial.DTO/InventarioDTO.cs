@@ -12,6 +12,8 @@ namespace SistemaComercial.DTO
 
         public int? IdCategoriaInventario { get; set; }
 
+        public string? NombreCategoria { get; set; }
+
         public int? CreatedBy { get; set; }
 
         public string Nombre { get; set; } = null!;
@@ -26,8 +28,11 @@ namespace SistemaComercial.DTO
 
         public string? Valor { get; set; }
 
-        public string? CreateAt { get; set; }
+        public DateTime? CreateAt { get; set; }
 
-        public string? UptadedAt { get; set; }
+        public DateTime? UptadedAt { get; set; }
+
+        public virtual UsuarioDTO? CreatedByNavigation { get; set; }
+        public virtual CategoriaInventarioDTO? IdCategoriaInventarioNavigation { get; set; }
     }
 }

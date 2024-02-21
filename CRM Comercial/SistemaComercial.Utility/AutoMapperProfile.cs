@@ -60,8 +60,8 @@ namespace SistemaComercial.Utility
                 );
             CreateMap<ServicioDTO, Servicio>()
                 .ForMember(destino =>
-                    destino.TipoServicioNavigation,
-                    opt => opt.Ignore()
+                    destino.Descripcion,
+                    opt => opt.MapFrom(origen => origen.DescripcionCategoria)
                 );
             #endregion
 
@@ -85,14 +85,6 @@ namespace SistemaComercial.Utility
                 .ForMember(destino =>
                     destino.UpdatedAt,
                     opt => opt.MapFrom(origen => origen.UpdatedAt.Value.ToString("dd/MM/yyyy"))
-                )
-                .ForMember(destino =>
-                    destino.Cliente,
-                    opt => opt.MapFrom(origen => origen.IdClienteNavigation)
-                )
-                .ForMember(destino => 
-                    destino.Usuario,
-                    opt => opt.MapFrom(origen => origen.IdUsuarioNavigation)
                 );
 
             CreateMap<CotizacionDTO, Cotizacion>()
@@ -133,15 +125,15 @@ namespace SistemaComercial.Utility
             #endregion
 
             #region Categoria inventario
-            CreateMap(CategoriaInventario, CategoriaInventarioDTO)().ReverseMap();
-            CreateMap(CategoriaInventarioDTO, CategoriaInventario)().ReverseMap();
+            CreateMap<CategoriaInventario, CategoriaInventarioDTO>().ReverseMap();
+            CreateMap<CategoriaInventarioDTO, CategoriaInventario>().ReverseMap();
             #endregion
 
             #region Detalle Cotización
             CreateMap<DetalleCotizacion, DetalleCotizacionDTO>()
                 .ForMember(destino =>
                     destino.DetalleServicio,
-                    opt => opt.MapFrom(origen => origen.IdProductoNavigation.Descripcion)
+                    opt => opt.MapFrom(origen => origen.IdServicioNavigation.Descripcion)
                 )
                 .ForMember(destino =>
                     destino.Total,
@@ -162,32 +154,68 @@ namespace SistemaComercial.Utility
                 )
                 .ForMember(destino =>
                     destino.CreatedAt,
-                    opt => opt.MapFrom(origen => DateTime.ParseExact(origen.CreatedAt, "dd/MM/yyyy", CultureInfo.InvariantCulture))
+                    opt => opt.Ignore()
                 )
                 .ForMember(destino =>
                     destino.UpdatedAt,
-                    opt => opt.MapFrom(origen => DateTime.ParseExact(origen.UpdatedAt, "dd/MM/yyyy", CultureInfo.InvariantCulture))
-                );
+                    opt => opt.Ignore()
+                )
+                .ForMember(destino =>
+                    destino.DetalleCotizacionInventarios,
+                    opt => opt.Ignore() 
+                )
+                .ForMember(destino => 
+                    destino.DetalleCotizacionVariables,
+                    opt => opt.Ignore()
+                )
+                .ForMember(destino => 
+                    destino.IdCotizacionNavigation,
+                    opt => opt.Ignore()
+                )
+                .ForMember(destino =>
+                    destino.IdServicioNavigation,
+                    opt => opt.Ignore()
+                )
+                .ForMember(destino => 
+                    destino.IdSucursalNavigation,
+                    opt => opt.Ignore()
+                )
+                ;
             #endregion
 
             #region Detalle cotizacion inventario
             CreateMap<DetalleCotizacionInventario, DetalleCotizacionInventarioDTO>()
-                .ForMember(destino =>
-                    destino.CreatedAt,
-                    opt => opt.MapFrom(origen => origen.CreatedAt.Value.ToString())
-                )
-                .ForMember(destino =>
-                    destino.UpdatedAt,
-                    opt => opt.MapFrom(origen => origen.UpdatedAt.Value.ToString())
-                );
+                .ReverseMap();
             CreateMap<DetalleCotizacionInventarioDTO, DetalleCotizacionInventario>()
+                .ReverseMap();
+            #endregion
+
+            #region Detalle Cotizacion Variable
+            CreateMap<DetalleCotizacionVariable, DetalleCotizacionVariableDTO>()
                 .ForMember(destino =>
-                    destino.CreatedAt,
-                    opt => opt.MapFrom(origen => DateTime.ParseExact(origen.CreatedAt, "dd/MM/yyyy", CultureInfo.InvariantCulture))
+                    destino.Valor,
+                    opt => opt.MapFrom(origen => origen.Valor.ToString())
                 )
                 .ForMember(destino =>
+                    destino.CreatedAt,
+                    opt => opt.MapFrom(origen => origen.CreatedAt)
+                  )
+                .ForMember(destino => 
                     destino.UpdatedAt,
-                    opt => opt.MapFrom(origen => DateTime.ParseExact(origen.UpdatedAt, "dd/MM/yyyy", CultureInfo.InvariantCulture))
+                    opt => opt.MapFrom(origen => origen.UpdatedAt)
+                );
+            CreateMap<DetalleCotizacionVariableDTO, DetalleCotizacionVariable>()
+                .ForMember(destino =>
+                    destino.CreatedAt,
+                    opt => opt.Ignore()
+                    )
+                .ForMember(destino =>
+                    destino.UpdatedAt,
+                    opt => opt.Ignore()
+                )
+                .ForMember(destino =>
+                    destino.Valor,
+                    opt => opt.MapFrom(origen => Convert.ToDecimal(origen.Valor))
                 );
             #endregion
 
@@ -198,12 +226,30 @@ namespace SistemaComercial.Utility
                     opt => opt.MapFrom(origen => origen.Valor.Value.ToString())
                 )
                 .ForMember(destino =>
+                    destino.NombreCategoria,
+                    opt => opt.MapFrom(origen => origen.IdCategoriaInventarioNavigation.Nombre)
+                )
+                .ForMember(destino =>
+                    destino.Estado,
+                    opt => opt.MapFrom(origen => origen.Estado == true ? 1 : 0)
+                )
+                .ForMember(destino =>
                     destino.CreateAt,
                     opt => opt.MapFrom(origen => origen.CreateAt.Value.ToString())
                 )
                 .ForMember(destino =>
                     destino.UptadedAt,
                     opt => opt.MapFrom(origen => origen.UptadedAt.Value.ToString())
+                );
+
+            CreateMap<InventarioDTO, Inventario>()
+                .ForMember(destino =>
+                    destino.Valor,
+                    opt => opt.MapFrom(origen => Convert.ToDecimal(origen.Valor))
+                )
+                .ForMember(destino =>
+                    destino.Estado,
+                    opt => opt.MapFrom(origen => origen.Estado == 1)
                 );
             #endregion
 

@@ -19,5 +19,7 @@ namespace SistemaComercial.DTO
         public string? CreatedAt { get; set; }
 
         public string? UpdatedAt { get; set; }
+
+        public virtual VariablesEconomicaDTO? IdParametrosVariablesNavigation { get; set; }
     }
 }

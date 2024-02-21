@@ -56,11 +56,12 @@ namespace SistemaComercial.BLL.Servicios
             try
             {
                 var servicioCreado = await _servicioRepository.Crear(_mapper.Map<Servicio>(servicio));
-                if (servicioCreado.IdServicio == 0)
+                if (servicioCreado == null)
                 {
                     throw new TaskCanceledException("No se pudo crear el servicio");
                 }
-                var query = await _servicioRepository.Consultar((s) => s.IdServicio == servicio.IdServicio);
+                var queryBD = await _servicioRepository.Consultar((s) => s.IdServicio == servicio.IdServicio);
+                var query = queryBD.Include("TipoServicioNavigation").FirstOrDefault();
                 return _mapper.Map<ServicioDTO>(query);
             }
             catch

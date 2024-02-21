@@ -28,7 +28,7 @@ namespace SistemaComercial.BLL.Servicios
             try
             {
                 var listaCotizaciones = await _cotizacionRepository.Consultar();
-                var query = listaCotizaciones.Include(c => c.IdClienteNavigation).Include(c => c.IdUsuarioNavigation).AsEnumerable().ToList();
+                var query = listaCotizaciones.Include(c => c.IdClienteNavigation).Include(c => c.IdUsuarioNavigation).Include(c => c.IdClienteNavigation).AsEnumerable().ToList();
                 return _mapper.Map<List<CotizacionDTO>>(query);
             }
             catch
@@ -42,7 +42,7 @@ namespace SistemaComercial.BLL.Servicios
             try
             {
                 IQueryable<Cotizacion> listarCotizacion = await _cotizacionRepository.Consultar(c => c.IdCotizacion == id);
-                var query = listarCotizacion.Include(c => c.IdClienteNavigation).Include(c => c.IdUsuarioNavigation).First();
+                var query = listarCotizacion.Include(c => c.IdClienteNavigation).Include(c => c.IdUsuarioNavigation).Include(c => c.IdClienteNavigation).First();
                 return _mapper.Map<CotizacionDTO>(query);
             }
             catch
@@ -58,7 +58,7 @@ namespace SistemaComercial.BLL.Servicios
                 Cotizacion cotizacionModelo = _mapper.Map<Cotizacion>(cotizacion);
                 Cotizacion cotizacionCreada = await _cotizacionRepository.Crear(cotizacionModelo) ?? throw new TaskCanceledException("No se pudo crear el cliente");
                 IQueryable<Cotizacion> listarCotizacion = await _cotizacionRepository.Consultar(c => c.IdCliente == cotizacion.IdCliente);
-                IQueryable<Cotizacion> query = listarCotizacion.Include(c => c.IdClienteNavigation).Include(c => c.IdUsuarioNavigation);
+                IQueryable<Cotizacion> query = listarCotizacion.Include(c => c.IdClienteNavigation).Include(c => c.IdUsuarioNavigation).Include(c => c.IdClienteNavigation);
                 return _mapper.Map<CotizacionDTO>(cotizacionCreada);
                 
             }

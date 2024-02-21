@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SistemaComercial.DTO\SistemaComercial.DTO.csproj" />
     <ProjectReference Include="..\SistemaComercial.Model\SistemaComercial.Model.csproj" />
   </ItemGroup>
 

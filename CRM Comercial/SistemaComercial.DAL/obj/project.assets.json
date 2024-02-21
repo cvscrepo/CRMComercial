@@ -961,6 +961,16 @@
           }
         }
       },
+      "SistemaComercial.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/SistemaComercial.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaComercial.DTO.dll": {}
+        }
+      },
       "SistemaComercial.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -2623,6 +2633,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "SistemaComercial.DTO/1.0.0": {
+      "type": "project",
+      "path": "../SistemaComercial.DTO/SistemaComercial.DTO.csproj",
+      "msbuildProject": "../SistemaComercial.DTO/SistemaComercial.DTO.csproj"
+    },
     "SistemaComercial.Model/1.0.0": {
       "type": "project",
       "path": "../SistemaComercial.Model/SistemaComercial.Model.csproj",
@@ -2631,6 +2646,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "SistemaComercial.DTO >= 1.0.0",
       "SistemaComercial.Model >= 1.0.0"
     ]
   },
@@ -2667,6 +2683,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj": {
+              "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj"
+            },
             "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj": {
               "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj"
             }
