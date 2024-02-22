@@ -59,7 +59,7 @@ namespace SistemaComercial.DAL.Repositorios
             return contador;
         }
 
-        private List<decimal> ContarHorasDiurnasNocturnas(int minutosInicio, int minutosFin, int minutosInicioDiurna, int minutosFinDiurna)
+        private decimal[] ContarHorasDiurnasNocturnas(int minutosInicio, int minutosFin, int minutosInicioDiurna, int minutosFinDiurna)
         {
             decimal minutosDiurnos = 0;
             decimal minutosNocturnos = 0;
@@ -137,10 +137,8 @@ namespace SistemaComercial.DAL.Repositorios
 
             decimal horasDiurnas = Math.Floor((decimal)minutosDiurnos / 60) + (minutosDiurnos % 60) / 60;
             decimal horasNocturnas = Math.Floor((decimal)minutosNocturnos / 60) + (minutosNocturnos % 60) / 60;
-
-            List<decimal> listaHoras = new List<decimal>();
-            listaHoras.Add(horasDiurnas);
-            listaHoras.Add(horasNocturnas);
+            decimal[] listaHoras = {horasDiurnas, horasNocturnas};
+            
             return listaHoras;
         }
 
@@ -153,10 +151,11 @@ namespace SistemaComercial.DAL.Repositorios
         }
 
 
-        private decimal CalculoValorDellate(decimal SMLV, decimal tarifa, decimal vpsv, bool armado, int aiuArmado, int aiuSinArma, int desdeHora, int hastaHora, bool[] diasSemana, decimal horasDiurnas, decimal horasNocturnas)
+        private decimal CalculoValorDellate(decimal SMLV, decimal tarifa, decimal vpsv, bool armado, int aiuArmado, int aiuSinArma, int desdeHora, int hastaHora, bool[] diasSemana, decimal horasDiurnas, decimal horasNocturnas, int minutosInicioDiurna, int minutosFinDiurna)
         {
             decimal tarifaServicio = CalcularTarifa(SMLV, tarifa, vpsv, armado, aiuArmado, aiuSinArma);
-            decimal horas = ContarHorasDiurnasNocturnas(desdeHora, hastaHora);
+            List<decimal> horas = ContarHorasDiurnasNocturnas(desdeHora, hastaHora, minutosInicioDiurna, minutosFinDiurna);
+            int dias = SumarDias(diasSemana);
         }
 
         public Task<Cotizacion> RegistrarDetalleCotización(CotizacionDTO cotizacion)
