@@ -29,3 +29,20 @@ C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Com
 C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.DAL\obj\Debug\net7.0\refint\SistemaComercial.DAL.dll
 C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.DAL\obj\Debug\net7.0\SistemaComercial.DAL.pdb
 C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.DAL\obj\Debug\net7.0\ref\SistemaComercial.DAL.dll
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DAL\obj\Debug\net7.0\SistemaComercial.DAL.csproj.AssemblyReference.cache
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DAL\obj\Debug\net7.0\SistemaComercial.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DAL\obj\Debug\net7.0\SistemaComercial.DAL.AssemblyInfoInputs.cache
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DAL\obj\Debug\net7.0\SistemaComercial.DAL.AssemblyInfo.cs
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DAL\obj\Debug\net7.0\SistemaComercial.DAL.csproj.CoreCompileInputs.cache
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DAL\obj\Debug\net7.0\SistemaComercial.DAL.dll
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DAL\obj\Debug\net7.0\refint\SistemaComercial.DAL.dll
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DAL\obj\Debug\net7.0\SistemaComercial.DAL.pdb
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DAL\bin\Debug\net7.0\SistemaComercial.DAL.deps.json
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DAL\bin\Debug\net7.0\SistemaComercial.DAL.dll
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DAL\bin\Debug\net7.0\SistemaComercial.DAL.pdb
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DAL\bin\Debug\net7.0\SistemaComercial.DTO.dll
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DAL\bin\Debug\net7.0\SistemaComercial.Model.dll
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DAL\bin\Debug\net7.0\SistemaComercial.DTO.pdb
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DAL\bin\Debug\net7.0\SistemaComercial.Model.pdb
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DAL\obj\Debug\net7.0\SistemaComercial.DAL.csproj.CopyComplete
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DAL\obj\Debug\net7.0\ref\SistemaComercial.DAL.dll

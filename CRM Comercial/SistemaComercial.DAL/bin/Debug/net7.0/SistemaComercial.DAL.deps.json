@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "SistemaComercial.DAL/1.0.0": {
         "dependencies": {
+          "SistemaComercial.DTO": "1.0.0",
           "SistemaComercial.Model": "1.0.0"
         },
         "runtime": {
@@ -550,6 +551,11 @@
           }
         }
       },
+      "SistemaComercial.DTO/1.0.0": {
+        "runtime": {
+          "SistemaComercial.DTO.dll": {}
+        }
+      },
       "SistemaComercial.Model/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13"
@@ -943,6 +949,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "SistemaComercial.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "SistemaComercial.Model/1.0.0": {
       "type": "project",

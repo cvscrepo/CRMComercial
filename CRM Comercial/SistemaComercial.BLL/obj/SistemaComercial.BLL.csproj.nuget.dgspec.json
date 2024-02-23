@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.BLL\\SistemaComercial.BLL.csproj": {}
+    "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.BLL\\SistemaComercial.BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.BLL\\SistemaComercial.BLL.csproj": {
+    "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.BLL\\SistemaComercial.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.BLL\\SistemaComercial.BLL.csproj",
+        "projectUniqueName": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.BLL\\SistemaComercial.BLL.csproj",
         "projectName": "SistemaComercial.BLL",
-        "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.BLL\\SistemaComercial.BLL.csproj",
-        "packagesPath": "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.BLL\\obj\\",
+        "projectPath": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.BLL\\SistemaComercial.BLL.csproj",
+        "packagesPath": "C:\\Users\\juand\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.BLL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\JuanDavidDiazOrozco\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\juand\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,24 +22,23 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DAL\\SistemaComercial.DAL.csproj": {
-                "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DAL\\SistemaComercial.DAL.csproj"
+              "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.DAL\\SistemaComercial.DAL.csproj": {
+                "projectPath": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.DAL\\SistemaComercial.DAL.csproj"
               },
-              "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj": {
-                "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj"
+              "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj": {
+                "projectPath": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj"
               },
-              "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj": {
-                "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj"
+              "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj": {
+                "projectPath": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj"
               },
-              "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj": {
-                "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj"
+              "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj": {
+                "projectPath": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj"
               }
             }
           }
@@ -83,25 +78,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DAL\\SistemaComercial.DAL.csproj": {
+    "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.DAL\\SistemaComercial.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DAL\\SistemaComercial.DAL.csproj",
+        "projectUniqueName": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.DAL\\SistemaComercial.DAL.csproj",
         "projectName": "SistemaComercial.DAL",
-        "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DAL\\SistemaComercial.DAL.csproj",
-        "packagesPath": "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DAL\\obj\\",
+        "projectPath": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.DAL\\SistemaComercial.DAL.csproj",
+        "packagesPath": "C:\\Users\\juand\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\JuanDavidDiazOrozco\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\juand\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -109,18 +100,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj": {
-                "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj"
+              "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj": {
+                "projectPath": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj"
               },
-              "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj": {
-                "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj"
+              "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj": {
+                "projectPath": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj"
               }
             }
           }
@@ -150,25 +140,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj": {
+    "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj",
+        "projectUniqueName": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj",
         "projectName": "SistemaComercial.DTO",
-        "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj",
-        "packagesPath": "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DTO\\obj\\",
+        "projectPath": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj",
+        "packagesPath": "C:\\Users\\juand\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.DTO\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\JuanDavidDiazOrozco\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\juand\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -176,7 +162,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -210,25 +195,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj": {
+    "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj",
+        "projectUniqueName": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj",
         "projectName": "SistemaComercial.Model",
-        "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj",
-        "packagesPath": "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\obj\\",
+        "projectPath": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj",
+        "packagesPath": "C:\\Users\\juand\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.Model\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\JuanDavidDiazOrozco\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\juand\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -236,7 +217,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -282,25 +262,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj": {
+    "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj",
+        "projectUniqueName": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj",
         "projectName": "SistemaComercial.Utility",
-        "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj",
-        "packagesPath": "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Utility\\obj\\",
+        "projectPath": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj",
+        "packagesPath": "C:\\Users\\juand\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.Utility\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\JuanDavidDiazOrozco\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\juand\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -308,18 +284,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj": {
-                "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj"
+              "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj": {
+                "projectPath": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj"
               },
-              "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj": {
-                "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj"
+              "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj": {
+                "projectPath": "D:\\Documents\\Proyectos\\CRMComercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj"
               }
             }
           }
@@ -359,7 +334,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

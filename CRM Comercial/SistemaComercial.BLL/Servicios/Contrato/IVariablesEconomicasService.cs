@@ -12,6 +12,7 @@ namespace SistemaComercial.BLL.Servicios.Contrato
     {
         public Task<List<VariablesEconomicaDTO>> ListarVariables();
         public Task<VariablesEconomicaDTO> ListarVariable(int id);
+        public Task<decimal> ListarVariable(string nombre);
         public Task<VariablesEconomicaDTO> CrearVariable(VariablesEconomicaDTO variable);
         public Task<VariablesEconomicaDTO> EditarVariable(VariablesEconomicaDTO variable);
         public Task<bool> EliminarVariable(int id);

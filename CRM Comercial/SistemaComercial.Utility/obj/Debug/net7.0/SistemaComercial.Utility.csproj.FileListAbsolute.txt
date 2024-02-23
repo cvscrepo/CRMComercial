@@ -33,3 +33,20 @@ C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Com
 C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.Utility\obj\Debug\net7.0\refint\SistemaComercial.Utility.dll
 C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.Utility\obj\Debug\net7.0\SistemaComercial.Utility.pdb
 C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.Utility\obj\Debug\net7.0\ref\SistemaComercial.Utility.dll
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.Utility\bin\Debug\net7.0\SistemaComercial.Utility.deps.json
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.Utility\bin\Debug\net7.0\SistemaComercial.Utility.dll
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.Utility\bin\Debug\net7.0\SistemaComercial.Utility.pdb
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.Utility\bin\Debug\net7.0\SistemaComercial.DTO.dll
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.Utility\bin\Debug\net7.0\SistemaComercial.Model.dll
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.Utility\bin\Debug\net7.0\SistemaComercial.DTO.pdb
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.Utility\bin\Debug\net7.0\SistemaComercial.Model.pdb
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.Utility\obj\Debug\net7.0\SistemaComercial.Utility.csproj.AssemblyReference.cache
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.Utility\obj\Debug\net7.0\SistemaComercial.Utility.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.Utility\obj\Debug\net7.0\SistemaComercial.Utility.AssemblyInfoInputs.cache
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.Utility\obj\Debug\net7.0\SistemaComercial.Utility.AssemblyInfo.cs
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.Utility\obj\Debug\net7.0\SistemaComercial.Utility.csproj.CoreCompileInputs.cache
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.Utility\obj\Debug\net7.0\SistemaComercial.Utility.csproj.CopyComplete
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.Utility\obj\Debug\net7.0\SistemaComercial.Utility.dll
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.Utility\obj\Debug\net7.0\refint\SistemaComercial.Utility.dll
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.Utility\obj\Debug\net7.0\SistemaComercial.Utility.pdb
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.Utility\obj\Debug\net7.0\ref\SistemaComercial.Utility.dll

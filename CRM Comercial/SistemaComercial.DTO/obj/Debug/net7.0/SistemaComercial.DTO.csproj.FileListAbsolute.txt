@@ -21,3 +21,14 @@ C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Com
 C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\refint\SistemaComercial.DTO.dll
 C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.pdb
 C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\ref\SistemaComercial.DTO.dll
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DTO\bin\Debug\net7.0\SistemaComercial.DTO.deps.json
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DTO\bin\Debug\net7.0\SistemaComercial.DTO.dll
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DTO\bin\Debug\net7.0\SistemaComercial.DTO.pdb
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.AssemblyInfoInputs.cache
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.AssemblyInfo.cs
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.csproj.CoreCompileInputs.cache
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.dll
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\refint\SistemaComercial.DTO.dll
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.pdb
+D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\ref\SistemaComercial.DTO.dll

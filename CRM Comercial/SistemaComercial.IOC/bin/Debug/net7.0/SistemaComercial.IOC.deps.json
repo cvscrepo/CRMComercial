@@ -590,6 +590,7 @@
       },
       "SistemaComercial.DAL/1.0.0": {
         "dependencies": {
+          "SistemaComercial.DTO": "1.0.0",
           "SistemaComercial.Model": "1.0.0"
         },
         "runtime": {

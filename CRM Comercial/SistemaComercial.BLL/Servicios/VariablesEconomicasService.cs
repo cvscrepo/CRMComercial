@@ -52,6 +52,23 @@ namespace SistemaComercial.BLL.Servicios
             }
         }
 
+        public async Task<Decimal> ListarVariable(string nombre)
+        {
+            try
+            {
+                var listarVariable = await _variablesRepositorio.Obtener((v) => v.Nombre == nombre);
+                if (listarVariable == null)
+                {
+                    throw new TaskCanceledException("Variable no encontrada");
+                }
+                return Convert.ToDecimal(listarVariable.Valor);
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
         public async Task<VariablesEconomicaDTO> CrearVariable(VariablesEconomicaDTO variable)
         {
             try
