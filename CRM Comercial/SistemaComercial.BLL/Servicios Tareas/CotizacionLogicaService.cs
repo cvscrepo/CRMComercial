@@ -5,6 +5,7 @@ using SistemaComercial.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,21 +18,23 @@ namespace SistemaComercial.BLL.Servicios_Tareas
         private readonly IVariablesEconomicasService _variableEconomicaService;
         private readonly IMapper _mapper;
 
-        //Variables economicas 
+        //Variables economicas detalle servicio
         private decimal SMLV;
+        private bool armado;
+        private int minutosInicioServicio;
+        private int minutosFinServicio;
+        private int diasRequeridoServicio;
+
+
+        //Variables economicas 
         private decimal tarifa;
         private decimal vpsv;
         private decimal vpd;
         private decimal vpn;
-        private bool armado;
         private int aiuArmado;
         private int aiuSinArma;
-        private int diasServicio;
-        private int minutosInicioServicio;
-        private int minutosFinServicio;
         private int minutosInicioDiurna;
         private int minutosFinDiurna;
-        private int diasRequeridoServicio;
         private int horasJornadaDiurna;
         private int horasJornadaNocturna;
         private int cantidadServicios;
@@ -101,7 +104,7 @@ namespace SistemaComercial.BLL.Servicios_Tareas
                 }
                 else if (minutosInicio < minutosFinDiurna && minutosInicio >= minutosInicioDiurna)
                 {
-                    minutosDiurnos *= Math.Min(minutosFin, minutosFinDiurna) - minutosInicio;
+                    minutosDiurnos += Math.Min(minutosFin, minutosFinDiurna) - minutosInicio;
                     minutosNocturnos += minutosFin - minutosFinDiurna;
                 }
                 else
@@ -171,61 +174,95 @@ namespace SistemaComercial.BLL.Servicios_Tareas
             decimal valorXhorasLab = (valorXdias / jornada) * horasAtrabajar;
             return valorXhorasLab;
         }
-        public decimal CalculoValorDellate(decimal SMLV, decimal tarifa, decimal vpsv, bool armado, int aiuArmado, int aiuSinArma, int desdeHora, int hastaHora, bool[] diasSemana, decimal horasDiurnas, decimal horasNocturnas, int minutosInicioDiurna, int minutosFinDiurna)
+        public decimal CalculoValorDellate(decimal SMLV, decimal tarifa, decimal vpd, decimal vpn, decimal vpsv, bool armado, int aiuArmado, int aiuSinArma, int desdeHora, int hastaHora, int diasServicio, int horasJornadaDiurna, int horasJornadaNocturna, int minutosInicioDiurna, int minutosFinDiurna)
         {
             decimal tarifaServicio = CalcularTarifa(SMLV, tarifa, vpsv, armado, aiuArmado, aiuSinArma);
             decimal[] horas = ContarHorasDiurnasNocturnas(desdeHora, hastaHora, minutosInicioDiurna, minutosFinDiurna);
-            int dias = SumarDias(diasSemana);
-            throw new NotImplementedException();
+            decimal valorHoraDia = 0;
+            decimal valorHoraNoche = 0;
+
+            if (horas[0] > 0)
+            {
+                valorHoraDia = FormulaServicioVigilancia(tarifaServicio, vpd, diasServicio, horasJornadaDiurna, horas[0]);
+            }
+            if (horas[1] > 0)
+            {
+                valorHoraNoche = FormulaServicioVigilancia(tarifaServicio, vpn, diasServicio, horasJornadaNocturna, horas[1]);
+            }
+            decimal totalValor = valorHoraDia + valorHoraNoche;
+            decimal totalRedondeado = Math.Round(totalValor);
+            return totalRedondeado;
         }
 
-        public async Task<bool> RegistrarCotizacion(CotizacionDTO cotizacion)
+        public async Task<decimal> CalculoDetalleCotizacion(CotizacionDTO cotizacion)
         {
             try
             {
+                decimal resultados = 0;
 
-
-                //Necesitamos crear el detalle cotización con el valor para luego crear las variables economicas
-
-                // Creee la cotizacion
-                CotizacionDTO cotizacionCreada = await _cotizacionService.CrearCotizacion(cotizacion);
+                // Obtengamos las variables de la base de datos
+                tarifa = await _variableEconomicaService.ListarVariable("tarifa");
+                vpsv = await _variableEconomicaService.ListarVariable("vpsv");
+                vpd = await _variableEconomicaService.ListarVariable("vpd");
+                vpn = await _variableEconomicaService.ListarVariable("vpn");
+                aiuArmado = (int)await _variableEconomicaService.ListarVariable("aiuArmado");
+                aiuSinArma = (int)await _variableEconomicaService.ListarVariable("aiuSinArma");
+                minutosInicioDiurna = (int)await _variableEconomicaService.ListarVariable("minutosInicioDiurna");
+                minutosFinDiurna = (int)await _variableEconomicaService.ListarVariable("minutosFinDiurna");
+                horasJornadaDiurna = (int)await _variableEconomicaService.ListarVariable("horasJornadaDiurna");
+                horasJornadaNocturna = (int)await _variableEconomicaService.ListarVariable("horasJornadaNocturna");
 
                 //Seteamos las variables para obtener el valor de la cotización y crear el detalle
-                foreach (var detalle in cotizacion.DatosDetalleCotizacion)
+
+                foreach (DetalleCotizacionDTO detalle in cotizacion.DetalleCotizacions)
                 {
-                    cantidadServicios = detalle.CantidadServicios;
-                    diasServicio = detalle.DiasServicio;
-                    minutosInicioServicio = detalle.MinutosInicioServicio;
-                    minutosFinServicio = detalle.MinutosFinServicio;
-                    SMLV = detalle.Smlv;
-                    armado = detalle.Armado;
+                    foreach(DetalleCotizacionVariableDTO variable in detalle.DetalleCotizacionVariables)
+                    {
 
-                    // Obtengamos las variables faltantes
-                    tarifa = await _variableEconomicaService.ListarVariable("Tarifa");
-                    vpsv = await _variableEconomicaService.ListarVariable("Valor prima seguro de vida");
-                    vpd = await _variableEconomicaService.ListarVariable("Valor proporcionalidad diurna");
-                    vpn = await _variableEconomicaService.ListarVariable("Valor proporcionalidad nocturna");
+                        var nombreVariable = variable.IdVariablesEconomicasNavigation.Nombre;
+                        //decimal valorVariable = Convert.ToDecimal(variable.IdVariablesEconomicasNavigation.Valor);
+                        decimal valorDetalleCotizacion = Convert.ToDecimal(variable.Valor);
+                        Type propiedad = typeof(CotizacionLogicaService);
+                        FieldInfo propiedad1 = propiedad.GetField(nombreVariable, BindingFlags.NonPublic | BindingFlags.Instance);
 
+                        //Varificar si la propiedad existe
 
+                        if (propiedad1 != null && propiedad1.FieldType == typeof(decimal))
+                        {
+                            propiedad1.SetValue(this, valorDetalleCotizacion);
+                        }
+                        if (propiedad1 != null && propiedad1.FieldType == typeof(bool))
+                        {
+                            propiedad1.SetValue(this, valorDetalleCotizacion == 1);
+                        }
+                        if (propiedad1 != null && propiedad1.FieldType == typeof(int))
+                        {
+                            propiedad1.SetValue(this, (int) valorDetalleCotizacion);
+                        }
 
-
-                }
-
-                // Recibimos la cotización, dentro de la cotización tenemos la información de los detalles
-                // Procedemos a crear dentro de un bucle esas variables dentro de la tabla variables economicas
-                foreach (DetalleCotizacionVariableDTO info in cotizacion.DatosDetalleCotizacion)
-                {
-
+                    }
                     
-                    _detalleCotizacionVariableService.CrearDetalleVariable(info);
+                    // Hacer el calculo del valor del servicio 
+                    decimal valorDetalleCotizacionCalculado = this.CalculoValorDellate( this.SMLV, this.tarifa, this.vpd, this.vpn, this.vpsv, this.armado, this.aiuArmado, this.aiuSinArma, this.minutosInicioServicio, this.minutosFinServicio , this.diasRequeridoServicio ,  this.horasJornadaDiurna,  this.horasJornadaNocturna,  this.minutosInicioDiurna,  this.minutosFinDiurna);
+                    resultados = valorDetalleCotizacionCalculado;
+                    
+                    
                 }
 
+                return resultados;
             }
             catch
             {
-
+                throw;
             }
-            throw new NotImplementedException();
+            
         }
+        
+        // Se crea la cotización
+        // Se saca el valor del detalle
+        // Se crea el detalle cotizacion
+        // Se crea las variables detalle cotización 
+        // 
+
     }
 }

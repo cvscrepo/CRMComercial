@@ -9,7 +9,7 @@ public partial class DetalleCotizacionVariable
 
     public int? IdDetalleCotizacion { get; set; }
 
-    public int? IdParametrosVariables { get; set; }
+    public int? IdVariablesEconomicas { get; set; }
 
     public decimal? Valor { get; set; }
 
@@ -19,5 +19,5 @@ public partial class DetalleCotizacionVariable
 
     public virtual DetalleCotizacion? IdDetalleCotizacionNavigation { get; set; }
 
-    public virtual VariablesEconomicas? IdParametrosVariablesNavigation { get; set; }
+    public virtual VariablesEconomicas? IdVariablesEconomicasNavigation { get; set; }
 }

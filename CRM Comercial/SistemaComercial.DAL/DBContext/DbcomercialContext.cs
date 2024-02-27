@@ -271,7 +271,7 @@ public partial class DbcomercialContext : DbContext
                 .HasColumnType("datetime")
                 .HasColumnName("createdAt");
             entity.Property(e => e.IdDetalleCotizacion).HasColumnName("idDetalleCotizacion");
-            entity.Property(e => e.IdParametrosVariables).HasColumnName("idParametrosVariables");
+            entity.Property(e => e.IdVariablesEconomicas).HasColumnName("idVariablesEconomicas");
             entity.Property(e => e.UpdatedAt)
                 .HasColumnType("datetime")
                 .HasColumnName("updatedAt");
@@ -283,8 +283,8 @@ public partial class DbcomercialContext : DbContext
                 .HasForeignKey(d => d.IdDetalleCotizacion)
                 .HasConstraintName("FK__DetalleCo__idDet__7D439ABD");
 
-            entity.HasOne(d => d.IdParametrosVariablesNavigation).WithMany(p => p.DetalleCotizacionVariables)
-                .HasForeignKey(d => d.IdParametrosVariables)
+            entity.HasOne(d => d.IdVariablesEconomicasNavigation).WithMany(p => p.DetalleCotizacionVariables)
+                .HasForeignKey(d => d.IdVariablesEconomicas)
                 .HasConstraintName("FK__DetalleCo__idPar__7E37BEF6");
         });
 

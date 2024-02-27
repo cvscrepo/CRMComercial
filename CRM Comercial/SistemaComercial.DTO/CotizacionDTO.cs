@@ -22,8 +22,6 @@ namespace SistemaComercial.DTO
 
         public string? Total { get; set; }
 
-        public List<InformacionDetalleCotizacionDTO> DatosDetalleCotizacion { get; set; }
-
         public string? CreatedAt { get; set; }
 
         public string? UpdatedAt { get; set; }

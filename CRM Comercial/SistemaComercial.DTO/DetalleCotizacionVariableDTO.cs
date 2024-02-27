@@ -12,7 +12,7 @@ namespace SistemaComercial.DTO
 
         public int? IdDetalleCotizacion { get; set; }
 
-        public int? IdParametrosVariables { get; set; }
+        public int? IdVariablesEconomicas { get; set; }
 
         public string? Valor { get; set; }
 
@@ -20,6 +20,6 @@ namespace SistemaComercial.DTO
 
         public string? UpdatedAt { get; set; }
 
-        public virtual VariablesEconomicaDTO? IdParametrosVariablesNavigation { get; set; }
+        public virtual VariablesEconomicaDTO? IdVariablesEconomicasNavigation { get; set; }
     }
 }

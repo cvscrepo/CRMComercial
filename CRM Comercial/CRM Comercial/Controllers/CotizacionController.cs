@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SistemaComercial.BLL.Servicios.Contrato;
+using SistemaComercial.BLL.Servicios_Tareas.Contrato;
 using SistemaComercial.DTO;
 using SistemaComercial.Utility;
 using System.Linq.Expressions;
@@ -11,10 +12,12 @@ namespace CRM_Comercial.Controllers
     public class CotizacionController : ControllerBase
     {
         private ICotizacionService _cotizacionService;
+        private ICotizacionLogica _cotizacionLogicaService;
 
-        public CotizacionController(ICotizacionService cotizacionService)
+        public CotizacionController(ICotizacionService cotizacionService, ICotizacionLogica cotizacionLogica)
         {
             _cotizacionService = cotizacionService;
+            _cotizacionLogicaService = cotizacionLogica;
         }
 
         [HttpGet]
@@ -63,7 +66,7 @@ namespace CRM_Comercial.Controllers
             Response response = new Response();
             try
             {
-                var cotizacionCreada = await _cotizacionService.CrearCotizacion(cotizacion);
+                var cotizacionCreada = await _cotizacionLogicaService.CalculoDetalleCotizacion(cotizacion);
                 response.Success = true;
                 response.Message = "Ok";
                 response.Value = cotizacionCreada;

@@ -9,6 +9,6 @@ namespace SistemaComercial.BLL.Servicios_Tareas.Contrato
 {
     public interface ICotizacionLogica
     {
-        public Task<bool> RegistrarCotizacion(CotizacionDTO cotizacion);
+        public Task<List<decimal>> CalculoDetalleCotizacion(CotizacionDTO cotizacion);
     }
 }

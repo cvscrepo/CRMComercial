@@ -1,24 +1,3 @@
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.BLL.deps.json
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.BLL.dll
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.BLL.pdb
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.AssemblyInfoInputs.cache
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.AssemblyInfo.cs
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.csproj.CoreCompileInputs.cache
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.dll
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\refint\SistemaComercial.BLL.dll
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.pdb
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\ref\SistemaComercial.BLL.dll
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.DAL.dll
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.DTO.dll
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.Model.dll
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.Utility.dll
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.DAL.pdb
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.DTO.pdb
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.Model.pdb
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.Utility.pdb
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.csproj.AssemblyReference.cache
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.csproj.CopyComplete
 C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.BLL.deps.json
 C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.BLL.dll
 C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.BLL.pdb
@@ -62,3 +41,24 @@ D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.BLL\obj\Debug
 D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\refint\SistemaComercial.BLL.dll
 D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.pdb
 D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\ref\SistemaComercial.BLL.dll
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.BLL.deps.json
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.BLL.dll
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.BLL.pdb
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.DAL.dll
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.DTO.dll
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.Model.dll
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.Utility.dll
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.DAL.pdb
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.DTO.pdb
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.Model.pdb
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\bin\Debug\net7.0\SistemaComercial.Utility.pdb
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.csproj.AssemblyReference.cache
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.AssemblyInfoInputs.cache
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.AssemblyInfo.cs
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.csproj.CoreCompileInputs.cache
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.csproj.CopyComplete
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.dll
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\refint\SistemaComercial.BLL.dll
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\SistemaComercial.BLL.pdb
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.BLL\obj\Debug\net7.0\ref\SistemaComercial.BLL.dll

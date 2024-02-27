@@ -276,10 +276,11 @@ namespace SistemaComercial.Utility
 
             #region variables economicas
             CreateMap<VariablesEconomicas, VariablesEconomicaDTO>()
-                .ForMember(destino =>
+                .ForMember(destino => 
                     destino.Valor,
                     opt => opt.MapFrom(origen => origen.Valor.ToString())
                 )
+
                 .ForMember(destino =>
                     destino.CreatedAt,
                     opt => opt.MapFrom(origen => origen.CreatedAt.Value.ToString())

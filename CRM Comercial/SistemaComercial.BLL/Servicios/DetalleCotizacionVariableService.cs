@@ -57,7 +57,7 @@ namespace SistemaComercial.BLL.Servicios
                 var detalleCreado = await _detalleVaraibleRepository.Crear(_mapper.Map<DetalleCotizacionVariable>(detalle));
                 if (detalleCreado != null) throw new TaskCanceledException("No se pudo crear el detalle cotización variable");
                 var consultarDetalle = await _detalleVaraibleRepository.Consultar(v => v.IdDetalleCotizacionVariables == detalleCreado.IdDetalleCotizacionVariables);
-                var query = consultarDetalle.Include(v => v.IdParametrosVariables).First();
+                var query = consultarDetalle.Include(v => v.IdVariablesEconomicas).First();
                 return _mapper.Map<DetalleCotizacionVariableDTO>(query);
             }
             catch

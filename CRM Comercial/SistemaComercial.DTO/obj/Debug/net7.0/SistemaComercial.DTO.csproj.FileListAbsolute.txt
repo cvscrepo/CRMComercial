@@ -1,14 +1,3 @@
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\bin\Debug\net7.0\SistemaComercial.DTO.deps.json
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\bin\Debug\net7.0\SistemaComercial.DTO.dll
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\bin\Debug\net7.0\SistemaComercial.DTO.pdb
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.AssemblyInfoInputs.cache
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.AssemblyInfo.cs
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.csproj.CoreCompileInputs.cache
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.dll
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\refint\SistemaComercial.DTO.dll
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.pdb
-C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\ref\SistemaComercial.DTO.dll
 C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.DTO\bin\Debug\net7.0\SistemaComercial.DTO.deps.json
 C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.DTO\bin\Debug\net7.0\SistemaComercial.DTO.dll
 C:\Users\PC\Documents\Proyectos programación\CRM Comercial\CRMComercial\CRM Comercial\SistemaComercial.DTO\bin\Debug\net7.0\SistemaComercial.DTO.pdb
@@ -32,3 +21,14 @@ D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DTO\obj\Debug
 D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\refint\SistemaComercial.DTO.dll
 D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.pdb
 D:\Documents\Proyectos\CRMComercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\ref\SistemaComercial.DTO.dll
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\bin\Debug\net7.0\SistemaComercial.DTO.deps.json
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\bin\Debug\net7.0\SistemaComercial.DTO.dll
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\bin\Debug\net7.0\SistemaComercial.DTO.pdb
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.AssemblyInfoInputs.cache
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.AssemblyInfo.cs
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.csproj.CoreCompileInputs.cache
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.dll
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\refint\SistemaComercial.DTO.dll
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\SistemaComercial.DTO.pdb
+C:\Users\JuanDavidDiazOrozco\OneDrive - Colviseg del Caribe\Documentos\Proyectos CVSC\Proyecto gestión comercial\CRM Comercial\CRM Comercial\SistemaComercial.DTO\obj\Debug\net7.0\ref\SistemaComercial.DTO.dll

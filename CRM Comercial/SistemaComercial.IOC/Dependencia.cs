@@ -15,6 +15,8 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using SistemaComercial.BLL.Servicios_Tareas.Contrato;
+using SistemaComercial.BLL.Servicios_Tareas;
 
 namespace SistemaComercial.IOC
 {
@@ -42,6 +44,7 @@ namespace SistemaComercial.IOC
             services.AddScoped<IDetalleCotizacionService, DetalleCotizacionService>();
             services.AddScoped<IDetalleCotizacionInventarioService, DetalleCotizacionInventarioService>();
             services.AddScoped<IDetalleCotizacionVariableService, DetalleCotizacionVariableService>();
+            services.AddScoped<ICotizacionLogica, CotizacionLogicaService>();
         }
     }
 }

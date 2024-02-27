@@ -56,11 +56,12 @@ namespace SistemaComercial.BLL.Servicios
         {
             try
             {
-                var listarVariable = await _variablesRepositorio.Obtener((v) => v.Nombre == nombre);
+                var listarVariable = await _variablesRepositorio.Obtener((v) => v.Nombre.ToLower() == nombre.ToLower());
                 if (listarVariable == null)
                 {
                     throw new TaskCanceledException("Variable no encontrada");
                 }
+                
                 return Convert.ToDecimal(listarVariable.Valor);
             }
             catch
