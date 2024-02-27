@@ -16,7 +16,7 @@ namespace SistemaComercial.DTO
 
         public int IdSucursal { get; set; }
 
-        public int? CantidadServicios { get; set; }
+        public int CantidadServicios { get; set; }
 
         public string? DetalleServicio { get; set; }
 

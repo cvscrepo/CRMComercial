@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SistemaComercial.BLL.Servicios;
 using SistemaComercial.BLL.Servicios.Contrato;
+using SistemaComercial.BLL.Servicios_Tareas.Contrato;
 using SistemaComercial.DTO;
 using SistemaComercial.Utility;
 
@@ -11,6 +12,7 @@ namespace CRM_Comercial.Controllers
     public class DetalleCotizacionController : ControllerBase
     {
         private readonly IDetalleCotizacionService _detalleCotizacionService;
+        private readonly ICotizacionLogica _cotizacionDetalleService;
 
         public DetalleCotizacionController(IDetalleCotizacionService detalleCotizacionService)
         {
@@ -38,6 +40,25 @@ namespace CRM_Comercial.Controllers
         }
 
         [HttpPost]
+        public async Task<IActionResult> CalcularDetalle([FromBody] DetalleCotizacionDTO detalle)
+        {
+            Response response = new Response();
+            try
+            {
+                var cotizacionDetalleValor = await _cotizacionDetalleService.CalculoDetalleCotizacion(detalle);
+                response.Success = true;
+                response.Message = "Ok";
+                response.Value = cotizacionDetalleValor;
+                return Ok(response);
+            }catch(Exception ex)
+            {
+                response.Success = false;
+                response.Message = ex.Message;
+                return BadRequest(response);
+            }
+        }
+
+        [HttpPost("valor")]
         public async Task<IActionResult> CrearDetalle([FromBody] DetalleCotizacionDTO detalle)
         {
             Response response = new Response();

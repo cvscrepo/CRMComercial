@@ -66,7 +66,7 @@ namespace CRM_Comercial.Controllers
             Response response = new Response();
             try
             {
-                var cotizacionCreada = await _cotizacionLogicaService.CalculoDetalleCotizacion(cotizacion);
+                var cotizacionCreada = await _cotizacionLogicaService.RegistrarCotizacion(cotizacion);
                 response.Success = true;
                 response.Message = "Ok";
                 response.Value = cotizacionCreada;

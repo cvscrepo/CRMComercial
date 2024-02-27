@@ -14,6 +14,7 @@ namespace SistemaComercial.BLL.Servicios_Tareas
     public class CotizacionLogicaService : ICotizacionLogica
     {
         private readonly IDetalleCotizacionVariableService _detalleCotizacionVariableService;
+        private readonly IDetalleCotizacionService _detalleCotizacionService;
         private readonly ICotizacionService _cotizacionService;
         private readonly IVariablesEconomicasService _variableEconomicaService;
         private readonly IMapper _mapper;
@@ -38,10 +39,12 @@ namespace SistemaComercial.BLL.Servicios_Tareas
         private int horasJornadaDiurna;
         private int horasJornadaNocturna;
         private int cantidadServicios;
+        private int iva;
 
-        public CotizacionLogicaService(IDetalleCotizacionVariableService detalleCotizacionVariableService, ICotizacionService cotizacionService, IVariablesEconomicasService variablesEconomicasService, IMapper mapper)
+        public CotizacionLogicaService(IDetalleCotizacionVariableService detalleCotizacionVariableService, IDetalleCotizacionService detalleCotizacionService,  ICotizacionService cotizacionService, IVariablesEconomicasService variablesEconomicasService, IMapper mapper)
         {
             _detalleCotizacionVariableService = detalleCotizacionVariableService;
+            _detalleCotizacionService = detalleCotizacionService;
             _variableEconomicaService = variablesEconomicasService;
             _cotizacionService = cotizacionService;
             _mapper = mapper;
@@ -174,6 +177,7 @@ namespace SistemaComercial.BLL.Servicios_Tareas
             decimal valorXhorasLab = (valorXdias / jornada) * horasAtrabajar;
             return valorXhorasLab;
         }
+        
         public decimal CalculoValorDellate(decimal SMLV, decimal tarifa, decimal vpd, decimal vpn, decimal vpsv, bool armado, int aiuArmado, int aiuSinArma, int desdeHora, int hastaHora, int diasServicio, int horasJornadaDiurna, int horasJornadaNocturna, int minutosInicioDiurna, int minutosFinDiurna)
         {
             decimal tarifaServicio = CalcularTarifa(SMLV, tarifa, vpsv, armado, aiuArmado, aiuSinArma);
@@ -216,7 +220,7 @@ namespace SistemaComercial.BLL.Servicios_Tareas
 
                 foreach (DetalleCotizacionDTO detalle in cotizacion.DetalleCotizacions)
                 {
-                    foreach(DetalleCotizacionVariableDTO variable in detalle.DetalleCotizacionVariables)
+                    foreach (DetalleCotizacionVariableDTO variable in detalle.DetalleCotizacionVariables)
                     {
 
                         var nombreVariable = variable.IdVariablesEconomicasNavigation.Nombre;
@@ -237,16 +241,16 @@ namespace SistemaComercial.BLL.Servicios_Tareas
                         }
                         if (propiedad1 != null && propiedad1.FieldType == typeof(int))
                         {
-                            propiedad1.SetValue(this, (int) valorDetalleCotizacion);
+                            propiedad1.SetValue(this, (int)valorDetalleCotizacion);
                         }
 
                     }
-                    
+
                     // Hacer el calculo del valor del servicio 
-                    decimal valorDetalleCotizacionCalculado = this.CalculoValorDellate( this.SMLV, this.tarifa, this.vpd, this.vpn, this.vpsv, this.armado, this.aiuArmado, this.aiuSinArma, this.minutosInicioServicio, this.minutosFinServicio , this.diasRequeridoServicio ,  this.horasJornadaDiurna,  this.horasJornadaNocturna,  this.minutosInicioDiurna,  this.minutosFinDiurna);
-                    resultados = valorDetalleCotizacionCalculado;
-                    
-                    
+                    decimal valorDetalleCotizacionCalculado = this.CalculoValorDellate(this.SMLV, this.tarifa, this.vpd, this.vpn, this.vpsv, this.armado, this.aiuArmado, this.aiuSinArma, this.minutosInicioServicio, this.minutosFinServicio, this.diasRequeridoServicio, this.horasJornadaDiurna, this.horasJornadaNocturna, this.minutosInicioDiurna, this.minutosFinDiurna);
+                    resultados = valorDetalleCotizacionCalculado * this.cantidadServicios;
+
+
                 }
 
                 return resultados;
@@ -255,13 +259,114 @@ namespace SistemaComercial.BLL.Servicios_Tareas
             {
                 throw;
             }
-            
+
         }
-        
-        // Se crea la cotización
-        // Se saca el valor del detalle
-        // Se crea el detalle cotizacion
-        // Se crea las variables detalle cotización 
+
+        public async Task<decimal> CalculoDetalleCotizacion(DetalleCotizacionDTO detalle)
+        {
+            try
+            {
+                decimal resultados = 0;
+
+                // Obtengamos las variables de la base de datos
+                tarifa = await _variableEconomicaService.ListarVariable("tarifa");
+                vpsv = await _variableEconomicaService.ListarVariable("vpsv");
+                vpd = await _variableEconomicaService.ListarVariable("vpd");
+                vpn = await _variableEconomicaService.ListarVariable("vpn");
+                aiuArmado = (int)await _variableEconomicaService.ListarVariable("aiuArmado");
+                aiuSinArma = (int)await _variableEconomicaService.ListarVariable("aiuSinArma");
+                minutosInicioDiurna = (int)await _variableEconomicaService.ListarVariable("minutosInicioDiurna");
+                minutosFinDiurna = (int)await _variableEconomicaService.ListarVariable("minutosFinDiurna");
+                horasJornadaDiurna = (int)await _variableEconomicaService.ListarVariable("horasJornadaDiurna");
+                horasJornadaNocturna = (int)await _variableEconomicaService.ListarVariable("horasJornadaNocturna");
+                iva = (int)await _variableEconomicaService.ListarVariable("iva");
+                SMLV = await _variableEconomicaService.ListarVariable("SMLV");
+                cantidadServicios = detalle.CantidadServicios;
+                //Seteamos las variables para obtener el valor de la cotización y crear el detalle
+
+                foreach (DetalleCotizacionVariableDTO variable in detalle.DetalleCotizacionVariables)
+                {
+
+                    var nombreVariable = variable.IdVariablesEconomicasNavigation.Nombre;
+                    decimal valorDetalleCotizacion = Convert.ToDecimal(variable.Valor);
+                    Type propiedad = typeof(CotizacionLogicaService);
+                    FieldInfo propiedad1 = propiedad.GetField(nombreVariable, BindingFlags.NonPublic | BindingFlags.Instance);
+
+                    //Varificar si la propiedad existe
+                    if (nombreVariable == "SMLV" && valorDetalleCotizacion > this.SMLV)
+                    {
+                        this.SMLV = valorDetalleCotizacion;
+                        continue;
+                    }
+                    if (propiedad1 != null && propiedad1.FieldType == typeof(decimal))
+                    {
+                        propiedad1.SetValue(this, valorDetalleCotizacion);
+                    }
+                    if (propiedad1 != null && propiedad1.FieldType == typeof(bool))
+                    {
+                        propiedad1.SetValue(this, valorDetalleCotizacion == 1);
+                    }
+                    if (propiedad1 != null && propiedad1.FieldType == typeof(int))
+                    {
+                        propiedad1.SetValue(this, (int)valorDetalleCotizacion);
+                    }
+
+                }
+
+                // Hacer el calculo del valor del servicio 
+                decimal valorDetalleCotizacionCalculado = this.CalculoValorDellate(this.SMLV, this.tarifa, this.vpd, this.vpn, this.vpsv, this.armado, this.aiuArmado, this.aiuSinArma, this.minutosInicioServicio, this.minutosFinServicio, this.diasRequeridoServicio, this.horasJornadaDiurna, this.horasJornadaNocturna, this.minutosInicioDiurna, this.minutosFinDiurna);
+                resultados = valorDetalleCotizacionCalculado * this.cantidadServicios;
+
+                return resultados;
+            }
+            catch
+            {
+                throw;
+            }
+
+        }
+
+        public async Task<CotizacionDTO> RegistrarCotizacion(CotizacionDTO cotizacion)
+        {
+            decimal valorTotalDetalles = 0;
+            decimal valorTotalIva = 0;
+
+            try
+            {
+                CotizacionDTO cotizacionCreada = await _cotizacionService.CrearCotizacion(cotizacion);
+                foreach (DetalleCotizacionDTO detalle in cotizacion.DetalleCotizacions)
+                {
+                    var valorDetalle = await this.CalculoDetalleCotizacion(detalle);
+                    valorTotalIva += valorDetalle * (this.iva / 100);
+                    valorTotalDetalles += valorDetalle;
+                    detalle.Total = valorDetalle.ToString();
+                    detalle.IdCotizacion = cotizacionCreada.IdCotizacion;
+                    DetalleCotizacionDTO detalleCotizacionCreado = await _detalleCotizacionService.CrearDetalleCotizacion(detalle);
+
+                    //Crear variables detalle cotización 
+                    foreach (DetalleCotizacionVariableDTO variableDetalle in detalle.DetalleCotizacionVariables) 
+                    {
+                        await _detalleCotizacionVariableService.CrearDetalleVariable(variableDetalle);
+                    }
+                }
+                var Total = valorTotalDetalles + valorTotalIva;
+                cotizacionCreada.Total = Total.ToString();
+                CotizacionDTO cotizacionEditada = await _cotizacionService.EditarCotizacion(cotizacionCreada);
+                return cotizacionCreada;
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+
+
+        // Se crea la cotización ok
+        // Se saca el valor del detalle ok
+        // Se crea el detalle cotizacion ok
+        // Se crea las variables detalle cotización  
+        // Editar total cotización
         // 
 
     }
