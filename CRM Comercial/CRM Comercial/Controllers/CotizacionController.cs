@@ -76,6 +76,7 @@ namespace CRM_Comercial.Controllers
             {
                 response.Success = false;
                 response.Message=ex.Message;
+                response.Value = ex;
                 return BadRequest(response);    
             }
         }

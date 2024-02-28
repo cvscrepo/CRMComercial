@@ -81,6 +81,7 @@ namespace SistemaComercial.BLL.Servicios
                 listarCotizacion.IdUsuario = cotizacion.IdUsuario;
                 listarCotizacion.Nombre = cotizacion.Nombre;
                 listarCotizacion.EditadoPor = cotizacion.EditadoPor;
+                listarCotizacion.Total = Convert.ToDecimal(cotizacion.Total);
                 listarCotizacion.Estado = cotizacion.Estado;
                 listarCotizacion.UpdatedAt = DateTime.Now;
                 bool cotizacionEditada = await _cotizacionRepository.Editar(listarCotizacion);

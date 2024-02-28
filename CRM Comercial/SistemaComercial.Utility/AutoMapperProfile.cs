@@ -91,7 +91,6 @@ namespace SistemaComercial.Utility
                 .ForMember(destino =>
                     destino.Total,
                     opt => opt.MapFrom(origen => Convert.ToDecimal(origen.Total, new CultureInfo("es-CO")))
-
                 )
                 .ForMember(destino =>
                     destino.CreatedAt,
@@ -99,6 +98,18 @@ namespace SistemaComercial.Utility
                 )
                 .ForMember(destino =>
                     destino.UpdatedAt,
+                    opt => opt.Ignore()
+                )
+                .ForMember(destino =>
+                    destino.DetalleCotizacions,
+                    opt => opt.Ignore()
+                )
+                .ForMember(destino =>
+                    destino.IdClienteNavigation,
+                    opt => opt.Ignore()
+                )
+                .ForMember(destino => 
+                    destino.IdUsuarioNavigation,
                     opt => opt.Ignore()
                 )
                 ;
@@ -216,7 +227,11 @@ namespace SistemaComercial.Utility
                 .ForMember(destino =>
                     destino.Valor,
                     opt => opt.MapFrom(origen => Convert.ToDecimal(origen.Valor))
-                );
+                )
+                .ForMember(destino =>
+                    destino.IdVariablesEconomicasNavigation,
+                    opt => opt.Ignore()
+                ); 
             #endregion
 
             #region Inventario

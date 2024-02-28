@@ -73,7 +73,7 @@ namespace SistemaComercial.BLL.Servicios
                 detalleCotizacionEncontrada.UpdatedAt = DateTime.Now;
                 var detalleEditado = await _detalleCotizacionRepository.Editar(detalleCotizacionEncontrada);
                 if (!detalleEditado) throw new TaskCanceledException("No se pudo editar el detalle de cotización");
-                return _mapper.Map<DetalleCotizacionDTO>(detalleCotizacionEncontrada);
+                return _mapper.Map<DetalleCotizacionDTO>(detalleEditado);
             }
             catch
             {

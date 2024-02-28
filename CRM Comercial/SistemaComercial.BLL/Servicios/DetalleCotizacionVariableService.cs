@@ -41,7 +41,7 @@ namespace SistemaComercial.BLL.Servicios
             try
             {
                 var listarDetalle = await _detalleVaraibleRepository.Consultar(v => v.IdDetalleCotizacion == idDetalleCotizacion);
-                var quey = listarDetalle.Include(v => v.IdDetalleCotizacionVariables).First();
+                var quey = listarDetalle.Include(v => v.IdVariablesEconomicasNavigation).First();
                 return _mapper.Map<DetalleCotizacionVariableDTO>(listarDetalle);
             }
             catch
@@ -55,9 +55,9 @@ namespace SistemaComercial.BLL.Servicios
             try
             {
                 var detalleCreado = await _detalleVaraibleRepository.Crear(_mapper.Map<DetalleCotizacionVariable>(detalle));
-                if (detalleCreado != null) throw new TaskCanceledException("No se pudo crear el detalle cotización variable");
+                if (detalleCreado == null) throw new TaskCanceledException("No se pudo crear el detalle cotización variable");
                 var consultarDetalle = await _detalleVaraibleRepository.Consultar(v => v.IdDetalleCotizacionVariables == detalleCreado.IdDetalleCotizacionVariables);
-                var query = consultarDetalle.Include(v => v.IdVariablesEconomicas).First();
+                var query = consultarDetalle.Include(v => v.IdVariablesEconomicasNavigation).First();
                 return _mapper.Map<DetalleCotizacionVariableDTO>(query);
             }
             catch

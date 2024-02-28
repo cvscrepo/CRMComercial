@@ -281,7 +281,7 @@ namespace SistemaComercial.BLL.Servicios_Tareas
                 horasJornadaNocturna = (int)await _variableEconomicaService.ListarVariable("horasJornadaNocturna");
                 iva = (int)await _variableEconomicaService.ListarVariable("iva");
                 SMLV = await _variableEconomicaService.ListarVariable("SMLV");
-                cantidadServicios = detalle.CantidadServicios;
+                cantidadServicios = (int)await _variableEconomicaService.ListarVariable("cantidadServicios");
                 //Seteamos las variables para obtener el valor de la cotización y crear el detalle
 
                 foreach (DetalleCotizacionVariableDTO variable in detalle.DetalleCotizacionVariables)
@@ -296,6 +296,11 @@ namespace SistemaComercial.BLL.Servicios_Tareas
                     if (nombreVariable == "SMLV" && valorDetalleCotizacion > this.SMLV)
                     {
                         this.SMLV = valorDetalleCotizacion;
+                        continue;
+                    }
+                    if (nombreVariable == "cantidadServicios" && valorDetalleCotizacion > this.cantidadServicios)
+                    {
+                        this.cantidadServicios = (int)valorDetalleCotizacion;
                         continue;
                     }
                     if (propiedad1 != null && propiedad1.FieldType == typeof(decimal))
@@ -337,7 +342,9 @@ namespace SistemaComercial.BLL.Servicios_Tareas
                 foreach (DetalleCotizacionDTO detalle in cotizacion.DetalleCotizacions)
                 {
                     var valorDetalle = await this.CalculoDetalleCotizacion(detalle);
-                    valorTotalIva += valorDetalle * (this.iva / 100);
+                    decimal ivaPlano = (decimal)this.iva / 100;
+                    decimal diezPorcientoValorDetalle = valorDetalle * (decimal)0.1;
+                    valorTotalIva += diezPorcientoValorDetalle * ivaPlano;
                     valorTotalDetalles += valorDetalle;
                     detalle.Total = valorDetalle.ToString();
                     detalle.IdCotizacion = cotizacionCreada.IdCotizacion;
@@ -346,13 +353,17 @@ namespace SistemaComercial.BLL.Servicios_Tareas
                     //Crear variables detalle cotización 
                     foreach (DetalleCotizacionVariableDTO variableDetalle in detalle.DetalleCotizacionVariables) 
                     {
+                        variableDetalle.IdDetalleCotizacion = detalleCotizacionCreado.IdDetalleCotizacion;
+                        variableDetalle.IdVariablesEconomicas = variableDetalle.IdVariablesEconomicasNavigation.IdVariablesEconomicas;
                         await _detalleCotizacionVariableService.CrearDetalleVariable(variableDetalle);
                     }
                 }
-                var Total = valorTotalDetalles + valorTotalIva;
-                cotizacionCreada.Total = Total.ToString();
+                var total = valorTotalDetalles + valorTotalIva;
+                // Direfencia de 1 peso con el cotizador, hay que acercarlo hacía el int arriba
+                //var totalInt = Math.Round(total);
+                cotizacionCreada.Total = total.ToString();
                 CotizacionDTO cotizacionEditada = await _cotizacionService.EditarCotizacion(cotizacionCreada);
-                return cotizacionCreada;
+                return cotizacionEditada;
             }
             catch
             {
