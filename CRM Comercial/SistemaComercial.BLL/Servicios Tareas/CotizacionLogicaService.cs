@@ -360,8 +360,8 @@ namespace SistemaComercial.BLL.Servicios_Tareas
                 }
                 var total = valorTotalDetalles + valorTotalIva;
                 // Direfencia de 1 peso con el cotizador, hay que acercarlo hacía el int arriba
-                //var totalInt = Math.Round(total);
-                cotizacionCreada.Total = total.ToString();
+                var totalInt = Math.Ceiling(total);
+                cotizacionCreada.Total = totalInt.ToString();
                 CotizacionDTO cotizacionEditada = await _cotizacionService.EditarCotizacion(cotizacionCreada);
                 return cotizacionEditada;
             }
