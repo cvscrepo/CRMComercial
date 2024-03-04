@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "XEeFj6gTLG/ASqYxy/cov/O/7mYaLfyrnUea8UjsD/I8WbfdrTvAokCRooesia/EmSkmarOCgR/Z7JlmT5OyhQ==",
+  "dgSpecHash": "0BkxOuO5H+wclVc5ei4G0oxQV8T4R3yi2hpGxMiXrLJrgQzROQnoYd9vfKeuNKiMDPrMX32I63jwuLdoRVAZOQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.IOC\\SistemaComercial.IOC.csproj",
+  "projectFilePath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.IOC\\SistemaComercial.IOC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\bcrypt.net-next\\4.0.0\\bcrypt.net-next.4.0.0.nupkg.sha512",
     "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",

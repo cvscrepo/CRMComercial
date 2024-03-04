@@ -45,6 +45,7 @@ namespace SistemaComercial.IOC
             services.AddScoped<IDetalleCotizacionInventarioService, DetalleCotizacionInventarioService>();
             services.AddScoped<IDetalleCotizacionVariableService, DetalleCotizacionVariableService>();
             services.AddScoped<ICotizacionLogica, CotizacionLogicaService>();
+            services.AddScoped<ILoginService, LoginService>();
         }
     }
 }

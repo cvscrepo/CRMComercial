@@ -18,14 +18,14 @@ namespace SistemaComercial.BLL.Servicios
 {
     public class UsuarioService : IUsurioService
     {
-        private readonly IDBDatos<Usuario> _DBDatos;
+        private readonly IRolService _rolService;
         private readonly IGenericRepository<Usuario> _usuarioRepositorio;
         private readonly IMapper _mapper;
 
-        public UsuarioService(IDBDatos<Usuario> dBDatos, IMapper mapper, IGenericRepository<Usuario> usuarioRepositorio)
+        public UsuarioService( IMapper mapper, IGenericRepository<Usuario> usuarioRepositorio, IRolService roleService)
         {
+            _rolService = roleService;
             _usuarioRepositorio = usuarioRepositorio;
-            _DBDatos = dBDatos;
             _mapper = mapper;
         }
 
@@ -62,16 +62,19 @@ namespace SistemaComercial.BLL.Servicios
         {
             try
             {
-                
+                // validaciones 
+                RolDTO validarRol = await _rolService.ListRole(usuario.IdRol);
+                if (validarRol == null) throw new TaskCanceledException("Rol no encontrado");
+                if (usuario.EsActivo == 0) usuario.EsActivo = 1;
                 var usuarioMapeado = _mapper.Map<Usuario>(usuario);
+                usuario.LastConnection = DateTime.Now;
+
+                // Crear usuario
                 var usuarioCreado = await _usuarioRepositorio.Crear(usuarioMapeado);
-                if(usuarioCreado.IdUsuario == 0)
-                {
-                    throw new TaskCanceledException("No se pudo crear el usuario");
-                }
-
+                if(usuarioCreado.IdUsuario == 0)throw new TaskCanceledException("No se pudo crear el usuario");
+                
+                //Retornar usuario
                 var query = await _usuarioRepositorio.Consultar(u => u.IdUsuario == usuarioCreado.IdUsuario);
-
                 usuarioCreado = query.Include(rol => rol.IdRolNavigation).FirstOrDefault();
 
 

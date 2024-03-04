@@ -41,12 +41,12 @@ namespace SistemaComercial.BLL.Servicios
             }
         }
 
-        public async Task<List<RolDTO>> ListRole(int id)
+        public async Task<RolDTO> ListRole(int id)
         {
             try
             {
-                var listarRol = await _rolRepository.Consultar(rol => rol.IdRol == id);
-                return _mapper.Map<List<RolDTO>>(listarRol);
+                var listarRol = await _rolRepository.Obtener(rol => rol.IdRol == id);
+                return _mapper.Map<RolDTO>(listarRol);
             }
             catch
             {

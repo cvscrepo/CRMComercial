@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj": {}
+    "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj": {
+    "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj",
+        "projectUniqueName": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj",
         "projectName": "SistemaComercial.DTO",
-        "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj",
+        "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj",
         "packagesPath": "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DTO\\obj\\",
+        "outputPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.DTO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj": {
+    "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj",
+        "projectUniqueName": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj",
         "projectName": "SistemaComercial.Model",
-        "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj",
+        "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj",
         "packagesPath": "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\obj\\",
+        "outputPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -136,14 +136,14 @@
         }
       }
     },
-    "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj": {
+    "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj",
+        "projectUniqueName": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj",
         "projectName": "SistemaComercial.Utility",
-        "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj",
+        "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj",
         "packagesPath": "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Utility\\obj\\",
+        "outputPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -165,11 +165,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj": {
-                "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj"
+              "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj": {
+                "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.DTO\\SistemaComercial.DTO.csproj"
               },
-              "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj": {
-                "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj"
+              "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj": {
+                "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj"
               }
             }
           }

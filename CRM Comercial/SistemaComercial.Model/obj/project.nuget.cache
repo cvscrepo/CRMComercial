@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RHzbmcexFpEyQ0FU43mwDtJ2e0MoAhBxhTEPWCJDdGKLeYhXNFKPa58TZUvJD9nJWkpINWCnich4aEKt4dZtkA==",
+  "dgSpecHash": "Z4i899+zy0jN7RobbqPf3N0e9BDOuey/uUSVXOiYILWMqT3tm2//4UwpRsCKM2D2trhpqORIDdrhoQY7mtcs0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj",
+  "projectFilePath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.Model\\SistemaComercial.Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

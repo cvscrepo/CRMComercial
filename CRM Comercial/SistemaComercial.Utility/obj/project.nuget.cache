@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QHVapzRCSVsI8ACMTIRgMaO3/4RGl7FbI7AK5Y5YFzUQpNlgAL8c8OAc6raXl1w2bPyLLB8AlmeRB1uu5v1Bzw==",
+  "dgSpecHash": "eSi9ZW3yHCSp5FlQ5o4HrzfLY0S5VRIRAAjZfrSj/uem9KGZ0pOyTvMEcr2rPeQqTE/tN9rN5sLyPlNNme2dcg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JuanDavidDiazOrozco\\OneDrive - Colviseg del Caribe\\Documentos\\Proyectos CVSC\\Proyecto gestión comercial\\CRM Comercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj",
+  "projectFilePath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\CRMComercial\\CRM Comercial\\SistemaComercial.Utility\\SistemaComercial.Utility.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
