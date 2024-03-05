@@ -11,7 +11,7 @@ namespace CRM_Comercial.Controllers
     {
         private readonly ILoginService _loginService;
         private readonly IUsurioService _usuarioService;
-        private readonly IConfiguration _configuration
+        private readonly IConfiguration _configuration;
 
         public LoginController(ILoginService loginService, IUsurioService usuarioService, IConfiguration configuration)
         {
@@ -34,7 +34,7 @@ namespace CRM_Comercial.Controllers
                 //generar un token
 
                 response.Success = true;
-                response.Message = "Ok";
+                response.Message = "Credenciales correctas, token asignado:";
                 response.Value = user;
                 return Ok(response);
             }

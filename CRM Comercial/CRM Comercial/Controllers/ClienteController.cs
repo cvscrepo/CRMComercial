@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using SistemaComercial.BLL.Servicios.Contrato;
 using SistemaComercial.DTO;
@@ -8,6 +9,7 @@ using SistemaComercial.Utility;
 namespace CRM_Comercial.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("api/[controller]")]
     public class ClienteController : ControllerBase
     {

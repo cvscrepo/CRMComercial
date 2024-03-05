@@ -360,3 +360,4 @@ C:\Users\JuanDavidDiazOrozco\Documents\CRMComercial\CRM Comercial\CRM Comercial\
 C:\Users\JuanDavidDiazOrozco\Documents\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\CRM Comercial.genruntimeconfig.cache
 C:\Users\JuanDavidDiazOrozco\Documents\CRMComercial\CRM Comercial\CRM Comercial\obj\Debug\net7.0\ref\CRM Comercial.dll
 C:\Users\JuanDavidDiazOrozco\Documents\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\BCrypt.Net-Next.dll
+C:\Users\JuanDavidDiazOrozco\Documents\CRMComercial\CRM Comercial\CRM Comercial\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

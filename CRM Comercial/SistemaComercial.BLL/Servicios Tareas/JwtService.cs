@@ -8,6 +8,6 @@ namespace SistemaComercial.BLL.Servicios_Tareas
 {
     public class JwtService
     {
-        public string Generate()
+       
     }
 }

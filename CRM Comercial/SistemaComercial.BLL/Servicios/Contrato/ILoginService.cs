@@ -9,7 +9,7 @@ namespace SistemaComercial.BLL.Servicios.Contrato
 {
     public interface ILoginService
     {
-        public Task<UsuarioDTO> Login(LoginDTO user);
+        public Task<string> Login(LoginDTO user);
         public Task<UsuarioDTO> Register(UsuarioDTO usuario);
     }
 
